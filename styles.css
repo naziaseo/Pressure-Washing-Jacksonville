@@ -195,24 +195,26 @@ p {
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 16px);
-  left: -18px;
+  top: 100%;
+  left: 0;
   z-index: 60;
   display: grid;
   gap: 2px;
-  min-width: 240px;
+  width: min(280px, calc(100vw - 32px));
+  max-height: min(70vh, 460px);
   padding: 10px;
   color: var(--navy);
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
+  overflow-y: auto;
 }
 
 .nav-dropdown-menu span {
   padding: 9px 10px;
   border-radius: 4px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .nav-dropdown-menu span:hover {
@@ -1227,6 +1229,10 @@ p {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .nav-dropdown-menu {
+    left: 0;
   }
 
   .hero {
