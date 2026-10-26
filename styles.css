@@ -211,13 +211,17 @@ p {
   overflow-y: auto;
 }
 
-.nav-dropdown-menu span {
+.nav-dropdown-menu span,
+.nav-dropdown-menu a {
+  display: block;
   padding: 9px 10px;
   border-radius: 4px;
   white-space: normal;
 }
 
-.nav-dropdown-menu span:hover {
+.nav-dropdown-menu span:hover,
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible {
   background: var(--sky);
 }
 
