@@ -1,4 +1,14 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/house-washing",
+      "destination": "/house-washing.html"
+    },
+    {
+      "source": "/paver-cleaning-sealing",
+      "destination": "/paver-cleaning-sealing.html"
+    }
+  ]
 }
