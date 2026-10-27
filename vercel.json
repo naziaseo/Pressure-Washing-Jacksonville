@@ -1,14 +1,15 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/house-washing",
-      "destination": "/house-washing.html"
-    },
-    {
-      "source": "/paver-cleaning-sealing",
-      "destination": "/paver-cleaning-sealing.html"
-    }
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/house-washing.html", "destination": "/house-washing", "permanent": true },
+    { "source": "/driveway-concrete-cleaning.html", "destination": "/driveway-concrete-cleaning", "permanent": true },
+    { "source": "/sidewalk-patio-cleaning.html", "destination": "/sidewalk-patio-cleaning", "permanent": true },
+    { "source": "/roof-soft-washing.html", "destination": "/roof-soft-washing", "permanent": true },
+    { "source": "/fence-deck-cleaning.html", "destination": "/fence-deck-cleaning", "permanent": true },
+    { "source": "/paver-cleaning-sealing.html", "destination": "/paver-cleaning-sealing", "permanent": true },
+    { "source": "/service-areas.html", "destination": "/service-areas", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true }
   ]
 }
