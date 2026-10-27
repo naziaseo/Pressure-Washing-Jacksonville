@@ -2,6 +2,12 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.flpressurewashingjacksonville.com" }],
+      "destination": "https://flpressurewashingjacksonville.com/:path*",
+      "permanent": true
+    },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/house-washing.html", "destination": "/house-washing", "permanent": true },
     { "source": "/driveway-concrete-cleaning.html", "destination": "/driveway-concrete-cleaning", "permanent": true },
