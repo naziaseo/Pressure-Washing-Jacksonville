@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^index\.html$ https://flpressurewashingjacksonville.com/ [R=301,L]
