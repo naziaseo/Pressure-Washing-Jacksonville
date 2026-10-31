@@ -30,9 +30,10 @@ html {
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
+  font-size: 1.0625rem;
   background: #f5f9fb;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.7;
   overflow-x: hidden;
 }
 
@@ -78,7 +79,7 @@ h1, h2, h3 {
 h2 {
   font-size: clamp(2.1rem, 2vw + 1.2rem, 3.2rem);
   font-weight: 800;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
   text-align: center;
 }
 
@@ -302,7 +303,7 @@ p {
   font-size: clamp(3.2rem, 3.5vw, 6rem);
   color: white;
   line-height: 0.96;
-  letter-spacing: -0.065em;
+  letter-spacing: 0;
   font-weight: 800;
 }
 
@@ -403,7 +404,7 @@ p {
 .trust-copy h3 {
   font-size: 1rem;
   margin-bottom: 4px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .trust-copy p {
@@ -472,7 +473,7 @@ p {
   margin-top: 18px;
   margin-bottom: 10px;
   font-size: 1.5rem;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .card-body p {
@@ -588,7 +589,7 @@ p {
 
 .benefit-item h3 {
   font-size: 1.3rem;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   margin-bottom: 12px;
 }
 
@@ -646,7 +647,7 @@ p {
 
 .process-step h3 {
   font-size: 1.35rem;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   margin-bottom: 12px;
 }
 
@@ -880,7 +881,7 @@ p {
   color: white;
   font-size: clamp(2.8rem, 5vw, 5.3rem);
   line-height: 1;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 }
 
 .service-hero-inner > p:not(.eyebrow) {
