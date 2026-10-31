@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://flpressurewashingjacksonville.com/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://flpressurewashingjacksonville.com/</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=900&amp;q=80</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=900&amp;q=80</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=900&amp;q=80</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&amp;fit=crop&amp;w=900&amp;q=80</image:loc>
+    </image:image>
+  </url>
   <url><loc>https://flpressurewashingjacksonville.com/house-washing</loc></url>
   <url><loc>https://flpressurewashingjacksonville.com/driveway-concrete-cleaning</loc></url>
   <url><loc>https://flpressurewashingjacksonville.com/sidewalk-patio-cleaning</loc></url>
