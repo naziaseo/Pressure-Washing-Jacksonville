@@ -268,34 +268,29 @@ p {
 
 .hero {
   position: relative;
-  min-height: 700px;
+  width: 100%;
+  min-height: 640px;
   display: flex;
   align-items: center;
   overflow: hidden;
   background-color: var(--navy-deep);
+  background-image: url("https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?fm=webp&w=1600&q=75");
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
 }
 
-.hero-bg {
+.hero::before {
   position: absolute;
   inset: 0;
   z-index: 0;
-  width: 100%;
-  max-width: none;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 35%;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
   background: linear-gradient(90deg, rgba(6, 38, 52, 0.84), rgba(17, 58, 87, 0.52) 56%, rgba(9, 35, 54, 0.36));
+  content: "";
 }
 
 .hero-inner {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: min(var(--container), calc(100% - 48px));
   padding: 88px 0;
 }
@@ -1350,8 +1345,8 @@ p {
     min-height: 620px;
   }
 
-  .hero-bg {
-    object-position: center 38%;
+  .hero {
+    background-position: center 38%;
   }
 
   .trust-inner {
@@ -1399,8 +1394,9 @@ p {
     text-align: center;
   }
 
-  .hero-bg {
-    object-position: 55% center;
+  .hero {
+    min-height: 0;
+    background-position: 55% center;
   }
 
   .cta-row {
