@@ -272,7 +272,7 @@ p {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  object-position: center;
+  object-position: center 80%;
   transform: scale(1.04);
 }
 
