@@ -24,7 +24,7 @@
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url('assets/fonts/manrope-latin-v23.woff2') format('woff2');
+  src: url('assets/fonts/manrope-latin-v23.woff2?v=20261106') format('woff2');
 }
 
 * {
