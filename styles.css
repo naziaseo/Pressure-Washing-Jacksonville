@@ -284,7 +284,7 @@ p {
   align-items: center;
   overflow: hidden;
   background-color: var(--navy-deep);
-  background-image: url("https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?fm=webp&w=1600&q=75");
+  background-image: url("https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?fm=webp&w=1200&q=50");
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -1675,6 +1675,7 @@ p {
 
   .hero {
     min-height: 620px;
+    background-image: url("https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?fm=webp&w=960&q=50");
   }
 
   .hero {
