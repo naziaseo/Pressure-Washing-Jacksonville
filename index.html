@@ -277,8 +277,8 @@
       @media(max-width:820px){.header-inner{flex-wrap:wrap;gap:18px;padding:18px 0 14px}.main-nav{order:3;width:100%;justify-content:center;flex-wrap:wrap}.nav-dropdown-menu{left:50%;transform:translateX(-50%)}.hero{min-height:620px;background-image:url("https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?fm=webp&w=960&q=50");background-position:center 38%}.service-hero{min-height:540px}}
       @media(max-width:620px){.container{width:min(var(--container),calc(100% - 26px))}.header-inner{justify-content:center}.brand{width:100%;justify-content:center}.main-nav{gap:12px 18px;font-size:.78rem}.hero{min-height:0;background-position:55% center}.hero-copy{text-align:center}.cta-row{justify-content:center}.service-hero-inner{padding:70px 0}.service-hero-inner h1{font-size:clamp(2.65rem,13vw,4rem)}.service-hero-inner>p:not(.eyebrow){font-size:1rem}.privacy-page{padding:42px 0 56px}.privacy-content{padding:30px 22px}.phone-cta{width:100%}}
     </style>
-    <link rel="preload" href="styles.css?v=20261106-contrast" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="styles.css?v=20261106-contrast" /></noscript>
+    <link rel="preload" href="styles.css?v=20261106-gallery" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles.css?v=20261106-gallery" /></noscript>
   </head>
   <body id="top">
     <header class="site-header">
@@ -504,55 +504,79 @@
       <section class="before-after section-spacing" aria-labelledby="before-after-title">
         <div class="container">
           <p class="eyebrow center">PROJECT PHOTOS</p>
-          <h2 id="before-after-title">Before &amp; After Pressure Washing Results</h2>
+          <h2 id="before-after-title">Before &amp; After Project Gallery</h2>
           <p class="section-intro">
-            This section is designed to show exterior cleaning transformations across concrete, house siding, patios, and pavers.
+            Explore the services we provide. Add your own matching before-and-after photos to show completed projects.
           </p>
           <p class="before-after-notice">
-            Matching project photos have not been added yet. Each marked space is a placeholder until its service photo is provided.
+            These are interactive photo placeholders, not actual project results. Your photos can replace them when ready.
           </p>
           <div class="before-after-grid">
             <article class="before-after-card">
               <h3>Driveway &amp; Concrete Cleaning</h3>
-              <div class="comparison-pair">
-                <div class="comparison-placeholder" role="img" aria-label="Before: driveway and concrete cleaning photo not yet provided">
-                  <span class="comparison-label">Before</span>
-                  <strong>Before photo not yet provided</strong>
-                </div>
-                <div class="comparison-placeholder" role="img" aria-label="After: matching driveway and concrete cleaning photo not yet provided">
+              <div class="comparison-slider" style="--comparison-position: 50%">
+                <div class="comparison-scene comparison-scene--after" aria-hidden="true">
                   <span class="comparison-label">After</span>
-                  <strong>After photo not yet provided</strong>
+                  <div class="comparison-placeholder-copy">
+                    <span class="photo-placeholder-label">Photo placeholder</span>
+                    <strong>Add your after photo</strong>
+                  </div>
                 </div>
+                <div class="comparison-scene comparison-scene--before" aria-hidden="true">
+                  <span class="comparison-label">Before</span>
+                  <div class="comparison-placeholder-copy">
+                    <span class="photo-placeholder-label">Photo placeholder</span>
+                    <strong>Add your before photo</strong>
+                  </div>
+                </div>
+                <input class="comparison-slider__range" type="range" min="0" max="100" value="50" aria-label="Compare before and after driveway and concrete cleaning photos" />
+                <span class="comparison-slider__handle" aria-hidden="true">↔</span>
               </div>
-              <p>Driveway and concrete cleaning photo pair.</p>
+              <p>Replace the placeholders with a matching driveway before-and-after photo pair.</p>
             </article>
             <article class="before-after-card">
               <h3>House Washing</h3>
-              <div class="comparison-pair">
-                <div class="comparison-placeholder" role="img" aria-label="Before: house washing photo not yet provided">
-                  <span class="comparison-label">Before</span>
-                  <strong>Before photo not yet provided</strong>
-                </div>
-                <div class="comparison-placeholder" role="img" aria-label="After: matching house washing photo not yet provided">
+              <div class="comparison-slider" style="--comparison-position: 50%">
+                <div class="comparison-scene comparison-scene--after" aria-hidden="true">
                   <span class="comparison-label">After</span>
-                  <strong>After photo not yet provided</strong>
+                  <div class="comparison-placeholder-copy">
+                    <span class="photo-placeholder-label">Photo placeholder</span>
+                    <strong>Add your after photo</strong>
+                  </div>
                 </div>
+                <div class="comparison-scene comparison-scene--before" aria-hidden="true">
+                  <span class="comparison-label">Before</span>
+                  <div class="comparison-placeholder-copy">
+                    <span class="photo-placeholder-label">Photo placeholder</span>
+                    <strong>Add your before photo</strong>
+                  </div>
+                </div>
+                <input class="comparison-slider__range" type="range" min="0" max="100" value="50" aria-label="Compare before and after house washing photos" />
+                <span class="comparison-slider__handle" aria-hidden="true">↔</span>
               </div>
-              <p>House washing photo pair.</p>
+              <p>Replace the placeholders with a matching house washing before-and-after photo pair.</p>
             </article>
             <article class="before-after-card">
               <h3>Patio &amp; Paver Cleaning</h3>
-              <div class="comparison-pair">
-                <div class="comparison-placeholder" role="img" aria-label="Before: patio and paver cleaning photo not yet provided">
-                  <span class="comparison-label">Before</span>
-                  <strong>Before photo not yet provided</strong>
-                </div>
-                <div class="comparison-placeholder" role="img" aria-label="After: matching patio and paver cleaning photo not yet provided">
+              <div class="comparison-slider" style="--comparison-position: 50%">
+                <div class="comparison-scene comparison-scene--after" aria-hidden="true">
                   <span class="comparison-label">After</span>
-                  <strong>After photo not yet provided</strong>
+                  <div class="comparison-placeholder-copy">
+                    <span class="photo-placeholder-label">Photo placeholder</span>
+                    <strong>Add your after photo</strong>
+                  </div>
                 </div>
+                <div class="comparison-scene comparison-scene--before" aria-hidden="true">
+                  <span class="comparison-label">Before</span>
+                  <div class="comparison-placeholder-copy">
+                    <span class="photo-placeholder-label">Photo placeholder</span>
+                    <strong>Add your before photo</strong>
+                  </div>
+                </div>
+                <input class="comparison-slider__range" type="range" min="0" max="100" value="50" aria-label="Compare before and after patio and paver cleaning photos" />
+                <span class="comparison-slider__handle" aria-hidden="true">↔</span>
               </div>
-              <p>Patio and paver cleaning photo pair.</p>
+              <p>Replace the placeholders with a matching patio or paver before-and-after photo pair.</p>
             </article>
           </div>
           <div class="before-after-cta">
@@ -864,6 +888,15 @@
             }, { once: true });
           }
         });
+      });
+      document.querySelectorAll(".comparison-slider").forEach((slider) => {
+        const range = slider.querySelector(".comparison-slider__range");
+        const updatePosition = () => {
+          slider.style.setProperty("--comparison-position", `${range.value}%`);
+        };
+        range.addEventListener("input", updatePosition);
+        updatePosition();
+        slider.classList.add("is-enhanced");
       });
     </script>
   </body>
