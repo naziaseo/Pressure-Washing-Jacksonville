@@ -1,47 +1,49 @@
-# Before & After Section — Jacksonville Pressure Wash
+# Purane 6 service pages — hours + 7-Day fix — Jacksonville Pressure Wash
 
-## What is in this package
+## Kyun zaroori hai
+Homepage aur 7 naye service pages par hours aur 7-Day Satisfaction Check live hain,
+lekin purane 6 service pages par abhi bhi kuch nahi hai. Live check (7 Nov 2026,
+~10:04 UTC) mein har purane page par "7-Day" 0 baar, "9:00 AM" 0 baar aur "Monday"
+0 baar mila. Jo visitor homepage se in pages par jata hai, use hours aur guarantee
+nazr nahi aati.
 
-- `index.html` — your homepage, with a new **Before & After** section added after the Services section and before the 7-Day Satisfaction Check section.
-- `assets/images/before-after/` — 4 photos (JPG, 1920 x 1280):
-  - `driveway-before.jpg` / `driveway-after.jpg` — Driveway Cleaning slider
-  - `house-before.jpg` / `house-after.jpg` — House Washing slider
+## Files (sirf 6 files upload karein — sitemap dobara nahi)
+1. `house-washing.html`
+2. `driveway-concrete-cleaning.html`
+3. `sidewalk-patio-cleaning.html`
+4. `roof-soft-washing.html`
+5. `fence-deck-cleaning.html`
+6. `paver-cleaning-sealing.html`
 
-## How the section works
+Update 7 Nov 2026, ~11:05 UTC: `sitemap.xml` is folder mein abhi bhi hai, lekin usko dobara upload karne ki zaroorat NAHI — user ne updated sitemap (17 URLs) pehle hi push kar diya hai aur live sitemap mein 17 links verify ho chuke hain. Is folder wali sitemap us se identical hai.
 
-- Each slider shows the **Before** photo on the left and the **After** photo on the right.
-- The visitor drags the white handle (or the slider) left and right to compare.
-- On a phone it works by touch, no extra app needed.
+## Har page mein sirf 3 chhoti changes hain (baaki content bilkul waisa ka waisa)
+1. Final CTA mein ye line add hui: "Working hours: Monday to Friday, 9:00 AM to
+   4:00 PM Eastern Time. 7-Day Satisfaction Check: if a spot remains within 7 days,
+   we will re-clean that spot free."
+2. FAQ mein ek naya sawal add hua: "What are your working hours and guarantee?"
+   — usi jawab ke saath, plus 24-hour reply.
+3. Final CTA ka "Request a Quote" button ab `quote.html` par jata hai (pehle
+   `./#contact` tha, jo koi page nahi hai — contact.html abhi bhi nahi bana).
 
-## Important — please read
+Har page mein ab "7-Day" 2 baar aur "9:00 AM" 2 baar hai. Section tags balanced
+hain, aur koi Licensed/Insured claim, fake review, fake photo ya price add nahi
+hua — sab kuch user ke confirmed facts se hai (Mon–Fri 9:00 AM–4:00 PM ET;
+7-Day Satisfaction Check).
 
-These 4 photos are **sample photos**, made to show what cleaning can do. They are **not photos of your own jobs**, because you do not have real before/after photos yet. The section says this honestly on the page:
+## Upload kaise karein (wahi tareeqa, ek step at a time)
+1. Ye 6 files VS Code project folder mein copy karke Replace karein (sitemap.xml dobara nahi).
+2. Commit message: `Add hours and 7-day guarantee to 6 original service pages`
+3. GitHub par push karein, phir Vercel par check karein ke naya deployment bana hai.
+4. Test: kisi purane service page par jaa kar "7-Day" search karein, aur
+   "Request a Quote" button dabaa kar dekhein ke quote.html khulta hai ya nahi.
 
-> "Sample photos showing the difference cleaning can make. We will add photos from our own Jacksonville jobs as they are completed."
+## Jo abhi bhi baqi hai (is batch mein nahi)
+- `service-areas.html` par bhi hours/guarantee nahi hain (live check mein 0 matches).
+- About aur Contact ke alag pages abhi bhi nahi hain (nav/footer ke #about / #contact
+  anchors waisi ki waisi hain) — ye agla kaam ho sakta hai, jab user chahe.
+- Quote form: Step 1 mein service tick kiye baghair Next nahi khulta — ye form ka
+  rule hai, kharabi nahi. Pehle service tick karein, phir Next dabayein.
 
-Do **not** remove that note until you replace the photos with your own real job photos. Showing sample photos as if they were your own work would mislead customers.
-
-## Upload steps
-
-1. In VS Code, copy `index.html` into your project folder and **Replace** the old one.
-2. Copy the whole folder `assets/images/before-after/` (with the 4 JPG files) into your project, so the path is exactly `assets/images/before-after/driveway-before.jpg` and so on.
-3. Save, commit and push to GitHub. Suggested commit message:
-   `Add Before and After section with sample photos`
-4. Check Vercel for a new deployment, then open the homepage and drag the sliders to test them.
-
-## How to replace the sample photos with your own real photos
-
-1. At a real job, take a **before** photo and an **after** photo from the **same spot, same angle, same distance**, in similar light.
-2. Save your photos with the same file names:
-   - `driveway-before.jpg` / `driveway-after.jpg`, or
-   - `house-before.jpg` / `house-after.jpg`
-3. Replace the files in `assets/images/before-after/` with yours, commit and push.
-4. Once all 4 photos are your own real photos, you can delete the "Sample photos..." sentence from the section (keep the "Get a free quote" link).
-
-## Photo tips for real before/after photos
-
-- Same angle and same distance for both photos.
-- Take the before photo first, clean, then stand in the same place for the after photo.
-- Daylight is best. Avoid harsh shadows across the surface.
-- Include the whole surface (driveway, wall) in the frame.
-- Do not edit the photos to make the after photo look brighter than it really is.
+Source: GitHub raw main (naziaseo/Pressure-Washing-Jacksonville), 7 Nov 2026.
+Built from the live/GitHub source, not from memory.
