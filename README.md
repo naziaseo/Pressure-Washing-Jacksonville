@@ -1,48 +1,47 @@
-# New Service Pages + Quote Form - Jacksonville Pressure Wash
+# Before & After Section — Jacksonville Pressure Wash
 
-## Files in this folder (9 files - upload ALL of them)
-1. `index.html` - UPDATED homepage. More Services list now links to the new pages, hero button now goes to quote.html, nav and footer have a Get a Quote link.
-2. `window-cleaning.html` - Window Cleaning Jacksonville, FL
-3. `gutter-cleaning.html` - Gutter Cleaning Jacksonville, FL
-4. `pool-deck-cleaning.html` - Pool Deck Cleaning Jacksonville, FL
-5. `screen-enclosure-pool-cage-cleaning.html` - Screen Enclosure & Pool Cage Cleaning Jacksonville, FL
-6. `dryer-vent-cleaning.html` - Dryer Vent Cleaning Jacksonville, FL
-7. `rust-stain-removal.html` - Rust & Stain Removal Jacksonville, FL
-8. `commercial-exterior-cleaning.html` - Commercial Exterior Cleaning Jacksonville, FL
-9. `quote.html` - 3-step quote form
+## What is in this package
 
-## What is in each service page
-Same header, footer, colours and style as your house-washing page. Each page has:
-- Hero, intro, What We Clean (5 cards), Common Problems (6), Our Process (5 steps), FAQ (5 questions)
-- 7-Day Satisfaction Check, Working Hours Monday-Friday 9:00 AM - 4:00 PM ET, 24-hour reply
-- Phone 877-367-5979, email info@flpressurewashingjacksonville.com
-- Updated date November 7, 2026
-- No Licensed & Insured claim, no fake reviews, no fake photos, no invented prices.
+- `index.html` — your homepage, with a new **Before & After** section added after the Services section and before the 7-Day Satisfaction Check section.
+- `assets/images/before-after/` — 4 photos (JPG, 1920 x 1280):
+  - `driveway-before.jpg` / `driveway-after.jpg` — Driveway Cleaning slider
+  - `house-before.jpg` / `house-after.jpg` — House Washing slider
 
-## Quote form - how it works (important)
-- Step 1: Choose services (all 13 services, tick boxes)
-- Step 2: Property type, service area, address, details, photo upload box
-- Step 3: Name, phone, email, best contact method, best time
-- On Send, it opens an email to info@flpressurewashingjacksonville.com with everything filled in. The customer just presses Send in their email app.
-- Photos: email cannot attach photos automatically from a form. The form tells the customer clearly to attach their photos in the email before sending. This is normal for a static HTML site with no backend.
-- If you later get a backend / Formspree / Netlify Forms, the same form can be connected to it. For now, mailto is the honest way.
+## How the section works
 
-## How to upload (same as last time)
-1. Copy ALL 9 files into your VS Code project folder, Replace when asked.
-2. Save, then commit and push to GitHub origin/main. Commit message suggestion:
-   `Add 7 new service pages and quote form`
-3. Check Vercel Deployments - a new deployment must appear for this commit. If not, Redeploy from the latest deployment.
-4. If your domain is also on Hostinger, upload the same 9 files to public_html.
-5. Test: open https://flpressurewashingjacksonville.com/quote.html and try the form. Click a new service link from the homepage More Services list.
+- Each slider shows the **Before** photo on the left and the **After** photo on the right.
+- The visitor drags the white handle (or the slider) left and right to compare.
+- On a phone it works by touch, no extra app needed.
 
-## Sitemap - add these 8 URLs to sitemap.xml
-Add one entry for each new page, same format as your other pages:
-- https://flpressurewashingjacksonville.com/window-cleaning.html
-- https://flpressurewashingjacksonville.com/gutter-cleaning.html
-- https://flpressurewashingjacksonville.com/pool-deck-cleaning.html
-- https://flpressurewashingjacksonville.com/screen-enclosure-pool-cage-cleaning.html
-- https://flpressurewashingjacksonville.com/dryer-vent-cleaning.html
-- https://flpressurewashingjacksonville.com/rust-stain-removal.html
-- https://flpressurewashingjacksonville.com/commercial-exterior-cleaning.html
-- https://flpressurewashingjacksonville.com/quote.html
-Use lastmod 2026-11-07 for these 8.
+## Important — please read
+
+These 4 photos are **sample photos**, made to show what cleaning can do. They are **not photos of your own jobs**, because you do not have real before/after photos yet. The section says this honestly on the page:
+
+> "Sample photos showing the difference cleaning can make. We will add photos from our own Jacksonville jobs as they are completed."
+
+Do **not** remove that note until you replace the photos with your own real job photos. Showing sample photos as if they were your own work would mislead customers.
+
+## Upload steps
+
+1. In VS Code, copy `index.html` into your project folder and **Replace** the old one.
+2. Copy the whole folder `assets/images/before-after/` (with the 4 JPG files) into your project, so the path is exactly `assets/images/before-after/driveway-before.jpg` and so on.
+3. Save, commit and push to GitHub. Suggested commit message:
+   `Add Before and After section with sample photos`
+4. Check Vercel for a new deployment, then open the homepage and drag the sliders to test them.
+
+## How to replace the sample photos with your own real photos
+
+1. At a real job, take a **before** photo and an **after** photo from the **same spot, same angle, same distance**, in similar light.
+2. Save your photos with the same file names:
+   - `driveway-before.jpg` / `driveway-after.jpg`, or
+   - `house-before.jpg` / `house-after.jpg`
+3. Replace the files in `assets/images/before-after/` with yours, commit and push.
+4. Once all 4 photos are your own real photos, you can delete the "Sample photos..." sentence from the section (keep the "Get a free quote" link).
+
+## Photo tips for real before/after photos
+
+- Same angle and same distance for both photos.
+- Take the before photo first, clean, then stand in the same place for the after photo.
+- Daylight is best. Avoid harsh shadows across the surface.
+- Include the whole surface (driveway, wall) in the frame.
+- Do not edit the photos to make the after photo look brighter than it really is.
