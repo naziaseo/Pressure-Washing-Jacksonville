@@ -85,3 +85,8 @@ naya design, hero photo aur saare links theek hain.
 - Hero image badal di: nayi pyari photo hai (golden light, saaf white ghar, palm trees, hari ghaas, paani ki mist). File ka naam wahi hai: assets/images/redesign/hero.jpg
 - Hydro-Kleen ki koi text, naam ("Kleen"), ya reviews copy NAHI kiye - sirf colours liye hain.
 - Upload karne ke liye sirf 3 files replace karein: index.html, styles.css, aur assets/images/redesign/hero.jpg
+
+## Update 8 Nov 2026 (shaam) - 13 service cards with photos
+- Ab homepage par 13 services ke photo cards hain (pehle 6 cards + 7 text links the). "More Services Available" wali list khatam kar di, har service ka apna photo card hai, Stallone's ki tarah.
+- 7 nayi photos: card-window.jpg, card-gutter.jpg, card-pool-deck.jpg, card-screen-enclosure.jpg, card-dryer-vent.jpg, card-rust-stain.jpg, card-commercial.jpg
+- Upload karne ke liye: index.html replace karein + 7 nayi photos ko assets/images/redesign/ folder mein copy karein. styles.css aur hero.jpg dobara upload karne ki zaroorat nahi.
