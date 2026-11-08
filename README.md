@@ -1,49 +1,81 @@
-# Purane 6 service pages — hours + 7-Day fix — Jacksonville Pressure Wash
+# Jacksonville Pressure Wash — Naya Homepage Design
 
-## Kyun zaroori hai
-Homepage aur 7 naye service pages par hours aur 7-Day Satisfaction Check live hain,
-lekin purane 6 service pages par abhi bhi kuch nahi hai. Live check (7 Nov 2026,
-~10:04 UTC) mein har purane page par "7-Day" 0 baar, "9:00 AM" 0 baar aur "Monday"
-0 baar mila. Jo visitor homepage se in pages par jata hai, use hours aur guarantee
-nazr nahi aati.
+Ye folder aapki website ke homepage ka naya design hai. Stallone's Pro Wash ki
+layout style se idea liya gaya hai, lekin design, rang, headline aur photos
+sab alag hain — kuch bhi copy nahi kiya gaya.
 
-## Files (sirf 6 files upload karein — sitemap dobara nahi)
-1. `house-washing.html`
-2. `driveway-concrete-cleaning.html`
-3. `sidewalk-patio-cleaning.html`
-4. `roof-soft-washing.html`
-5. `fence-deck-cleaning.html`
-6. `paver-cleaning-sealing.html`
+## Naya design kya hai
 
-Update 7 Nov 2026, ~11:05 UTC: `sitemap.xml` is folder mein abhi bhi hai, lekin usko dobara upload karne ki zaroorat NAHI — user ne updated sitemap (17 URLs) pehle hi push kar diya hai aur live sitemap mein 17 links verify ho chuke hain. Is folder wali sitemap us se identical hai.
+- **Naye rang:** gehra teal-navy (`#0A2E3D`) + garam amber (`#F59E0B`) buttons aur
+  highlights ke liye. Safed background, halke blue-grey sections.
+- **Naya hero:** "A Cleaner Home Starts Here." — nayi photo ke saath, jismein
+  technician side se ghar ki siding wash kar raha hai.
+- **Top bar (nayi):** upar phone 877-367-5979, hours Mon–Fri 9:00 AM–4:00 PM ET
+  aur "Free Estimates" likha hai. Koi discount ya offer nahi hai.
+- **Trust pill:** hero mein "7-Day Satisfaction Check • Reply within 24 hours".
+- **Scrolling strip:** hero ke neeche chalti hui patti — Free Estimates, 7-Day
+  Satisfaction Check, Reply Within 24 Hours, hours, Jacksonville, FL.
+- **Service category pills:** services se pehle 6 main services ke pill buttons.
+- **Guarantee section:** ab gehre navy rang mein, amber highlights ke saath.
+- **Baaki sab kuch waisa hi hai:** Quick Answer, trust bar, 13 services,
+  Before & After sliders, 7-Day section, What Can We Remove, Pressure vs Soft
+  Washing, About (Nazia Akbar, 1 saal experience), 4-step process, service
+  areas (8 clusters), FAQ (8 sawal), final CTA aur footer.
 
-## Har page mein sirf 3 chhoti changes hain (baaki content bilkul waisa ka waisa)
-1. Final CTA mein ye line add hui: "Working hours: Monday to Friday, 9:00 AM to
-   4:00 PM Eastern Time. 7-Day Satisfaction Check: if a spot remains within 7 days,
-   we will re-clean that spot free."
-2. FAQ mein ek naya sawal add hua: "What are your working hours and guarantee?"
-   — usi jawab ke saath, plus 24-hour reply.
-3. Final CTA ka "Request a Quote" button ab `quote.html` par jata hai (pehle
-   `./#contact` tha, jo koi page nahi hai — contact.html abhi bhi nahi bana).
+## Files
 
-Har page mein ab "7-Day" 2 baar aur "9:00 AM" 2 baar hai. Section tags balanced
-hain, aur koi Licensed/Insured claim, fake review, fake photo ya price add nahi
-hua — sab kuch user ke confirmed facts se hai (Mon–Fri 9:00 AM–4:00 PM ET;
-7-Day Satisfaction Check).
+| File | Size | Kaam |
+|---|---|---|
+| `index.html` | 64 KB | Naya homepage |
+| `styles.css` | 38 KB | Naya stylesheet (saare 13 service pages bhi isi ko use karte hain) |
+| `assets/images/redesign/hero.jpg` | 444 KB | Hero photo (1920×1080) |
+| `assets/images/redesign/card-house.jpg` | 692 KB | House Washing card photo |
+| `assets/images/redesign/card-driveway.jpg` | 761 KB | Driveway card photo |
+| `assets/images/redesign/card-roof.jpg` | 631 KB | Roof card photo |
+| `assets/images/redesign/card-paver.jpg` | 1.1 MB | Paver card photo |
 
-## Upload kaise karein (wahi tareeqa, ek step at a time)
-1. Ye 6 files VS Code project folder mein copy karke Replace karein (sitemap.xml dobara nahi).
-2. Commit message: `Add hours and 7-day guarantee to 6 original service pages`
-3. GitHub par push karein, phir Vercel par check karein ke naya deployment bana hai.
-4. Test: kisi purane service page par jaa kar "7-Day" search karein, aur
-   "Request a Quote" button dabaa kar dekhein ke quote.html khulta hai ya nahi.
+Kul size: taqreeban 3.6 MB.
 
-## Jo abhi bhi baqi hai (is batch mein nahi)
-- `service-areas.html` par bhi hours/guarantee nahi hain (live check mein 0 matches).
-- About aur Contact ke alag pages abhi bhi nahi hain (nav/footer ke #about / #contact
-  anchors waisi ki waisi hain) — ye agla kaam ho sakta hai, jab user chahe.
-- Quote form: Step 1 mein service tick kiye baghair Next nahi khulta — ye form ka
-  rule hai, kharabi nahi. Pehle service tick karein, phir Next dabayein.
+**Zaroori note:** Hero aur card photos AI se banayi gayi hain, ye aapke asal
+job ki photos nahi hain. Before & After wali 4 photos bhi waisi hi sample
+photos hain, un par wahi honest note laga hai jo pehle tha. Jab aapke apne
+Jacksonville jobs ki photos aa jayein to in ko replace kar dein.
 
-Source: GitHub raw main (naziaseo/Pressure-Washing-Jacksonville), 7 Nov 2026.
-Built from the live/GitHub source, not from memory.
+## Upload kaise karein
+
+**Step 1 — index.html aur styles.css replace karein**
+Is folder se `index.html` aur `styles.css` copy karein, aur apne project
+folder mein paste karein. Windows puchega ke file pehle se hai, to
+**Replace** par click karein.
+
+**Step 2 — Nayi photos wala folder copy karein**
+Is folder ke andar `assets` folder hai. Us mein `images/redesign` folder hai
+jismein 5 photos hain. Poora `redesign` folder copy karke apne project ke
+`assets/images/` folder ke andar paste kar dein.
+
+> Before & After wali photos (`assets/images/before-after/`) aur
+> `brand-mark.svg` pehle se aapki site par hain, un ko dobara upload
+> karne ki zaroorat nahi hai.
+
+**Step 3 — Commit aur push karein**
+VS Code mein Source Control par jaayein, changes ko stage karein, commit
+message likhein:
+
+`Redesign homepage with new hero, colors and photos`
+
+Phir push karein.
+
+**Step 4 — Live check**
+Push ho jaye to bata dein, live site check karke confirm kar diya jayega ke
+naya design, hero photo aur saare links theek hain.
+
+## Aur kya badla hai
+
+- Service pages (13) ko alag se kuch nahi karna. Wo bhi yahi `styles.css`
+  use karte hain, is liye unke buttons amber ho jayein ge aur headings naye
+  style mein dikhein gi. Unka content aur links waisi hi rahein ge.
+- Sitemap dobara upload karne ki zaroorat nahi hai, koi naya page nahi bana.
+- Fonts: ab system fonts use hote hain, koi Google Fonts load nahi hota.
+- Koi jhoota claim nahi lagaya gaya: no Licensed/Insured, no reviews, no
+  prices, no discount. Hours Mon–Fri 9:00 AM–4:00 PM ET aur 7-Day
+  Satisfaction Check waisi hi hain jaisi aapne confirm ki thi.
