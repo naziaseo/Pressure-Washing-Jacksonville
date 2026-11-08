@@ -1,36 +1,21 @@
-# Service Pages - Nayi Hero Images (13 pages)
+# CSS Version Fix - 15 pages (service heroes ko live dikhane ke liye)
 
-Stallone's ki service pages se idea le kar har service ke liye uski apni hero photo banayi gayi hai.
-Ye photos AI se banayi gayi hain - Stallone's ki photos NAHI hain, aur ye hamare asal kaam ki photos bhi NAHI hain.
-Jab apne Jacksonville jobs ki asal photos mil jayein to inhi filenames se replace kar dein.
+Asal masla: service pages abhi bhi `styles.css?v=20261106-gallery` load kar rahe the.
+Browser ne us purane link wali CSS ko 1 saal ke liye save kar rakha hai, is liye nayi CSS
+(paint roller hatane wali fix) un pages par lag hi nahi rahi thi. Homepage par fix aa gaya
+tha kyunki index.html mein naya version tha, lekin service pages par purana version tha.
 
-## Kya kya hai is folder mein
-- 13 HTML files (har service page, hero photo badli hui)
-- assets/images/service-heroes/ - 13 nayi hero photos (1920x1280 JPG)
-- Har page par sirf hero photo badli hai - text, hours, 7-Day guarantee sab waisa hi hai.
+Fix: in 15 files mein CSS version `?v=20261108-service-heroes` kar diya hai, taake
+browser nayi CSS fresh load kare. Sirf version badla hai - text, hours, 7-Day sab waisa hi hai.
+Saath mein service-areas.html aur quote.html ki hero photo bhi theek kar di hai
+(dono par bhi paint roller wali purani photo lagi thi):
+- service-areas.html -> driveway-concrete.jpg
+- quote.html -> house-washing.jpg
 
-## Upload karne ka tareeqa (ek step at a time)
-1. VS Code mein project folder kholein.
-2. Pehle `assets/images/` ke andar naya folder banayein: `service-heroes`
-3. Is folder ki 13 JPG photos ko `assets/images/service-heroes/` mein copy karein.
-4. Phir is folder ki 13 HTML files ko project ke root folder mein copy karke replace karein
-   (purani files ki jagah - naam bilkul wahi hain).
-5. Commit karein: "Add service-specific hero images to all 13 service pages"
-6. Push karein. Phir mujhe batayein, main live check kar dungi.
+## Upload karne ka tareeqa
+1. Is folder ki 15 HTML files ko project ke root folder mein copy karke replace karein.
+2. Commit karein: "Load fresh styles on all service pages"
+3. Push karein. Phir mujhe batayein, main live check kar dungi.
 
-## Pages aur unki photos
-- house-washing.html -> house-washing.jpg
-- driveway-concrete-cleaning.html -> driveway-concrete.jpg
-- sidewalk-patio-cleaning.html -> sidewalk-patio.jpg
-- roof-soft-washing.html -> roof-soft-washing.jpg
-- fence-deck-cleaning.html -> fence-deck.jpg
-- paver-cleaning-sealing.html -> paver-cleaning-sealing.jpg
-- window-cleaning.html -> window-cleaning.jpg
-- gutter-cleaning.html -> gutter-cleaning.jpg
-- pool-deck-cleaning.html -> pool-deck.jpg
-- screen-enclosure-pool-cage-cleaning.html -> screen-enclosure.jpg
-- dryer-vent-cleaning.html -> dryer-vent.jpg
-- rust-stain-removal.html -> rust-stain.jpg
-- commercial-exterior-cleaning.html -> commercial.jpg
-
-Note: index.html / styles.css is batch mein NAHI hain - icons wali fix alag hai, wo pehle wali files hain.
+Note: index.html aur styles.css pehle hi push ho chuke hain, unko dobara upload karne ki
+zaroorat NAHI hai. Photos bhi pehle hi upload ho chuki hain.
