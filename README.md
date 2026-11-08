@@ -79,3 +79,9 @@ naya design, hero photo aur saare links theek hain.
 - Koi jhoota claim nahi lagaya gaya: no Licensed/Insured, no reviews, no
   prices, no discount. Hours Mon–Fri 9:00 AM–4:00 PM ET aur 7-Day
   Satisfaction Check waisi hi hain jaisi aapne confirm ki thi.
+
+## Update 8 Nov 2026 (shaam) - Hydro-Kleen colour scheme + nayi hero image
+- Colour scheme badal diya: ab Hydro-Kleen wali scheme hai - brand red #C2042B, white, near-black text, halka grey #F9F9F9. Upar wali top bar ab red hai. Amber/teal colours khatam.
+- Hero image badal di: nayi pyari photo hai (golden light, saaf white ghar, palm trees, hari ghaas, paani ki mist). File ka naam wahi hai: assets/images/redesign/hero.jpg
+- Hydro-Kleen ki koi text, naam ("Kleen"), ya reviews copy NAHI kiye - sirf colours liye hain.
+- Upload karne ke liye sirf 3 files replace karein: index.html, styles.css, aur assets/images/redesign/hero.jpg
