@@ -762,9 +762,8 @@ p {
   border-radius: 50%;
   background: linear-gradient(135deg, var(--teal), var(--teal-dark));
   color: white;
-  display: grid;
   place-items: center;
-  box-shadow: 0 12px 22px rgba(23, 191, 208, 0.35);
+  box-shadow: 0 12px 22px rgba(194, 4, 43, 0.35);
 }
 
 .service-icon svg {
@@ -1282,9 +1281,8 @@ p {
   inset: 0;
 }
 
-.service-hero-image {
-  background: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1800&q=85') center / cover;
-}
+/* Hero photo: set per page in that page's own inline <style> (assets/images/service-heroes/...).
+   No background here on purpose - this file loads after the inline style and would override it. */
 
 .concrete-hero-image {
   background-image: url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1800&q=85');
@@ -1546,7 +1544,7 @@ p {
 
 .compact-problem-grid > div {
   padding-top: 18px;
-  border-top: 2px solid rgba(23, 191, 208, 0.4);
+  border-top: 2px solid rgba(194, 4, 43, 0.4);
 }
 
 .problem-grid h3 {
@@ -2218,4 +2216,33 @@ h2 {
     gap: 6px 18px;
     font-size: 0.82rem;
   }
+}
+
+/* More Services list: centred like the service cards */
+.more-services {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.more-services h3 {
+  text-align: center;
+}
+
+.more-services p {
+  text-align: center;
+}
+
+.more-services ul {
+  list-style: none;
+  margin: 18px auto 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+  max-width: 900px;
+}
+
+.more-services ul li {
+  margin: 0;
 }
