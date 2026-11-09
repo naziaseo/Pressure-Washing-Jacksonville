@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# www -> non-www (site ka sirf ek version: flpressurewashingjacksonville.com)
+RewriteCond %{HTTP_HOST} ^www\.flpressurewashingjacksonville\.com$ [NC]
+RewriteRule ^(.*)$ https://flpressurewashingjacksonville.com/$1 [R=301,L]
+
+# /index.html -> homepage (pehle se tha, waisa hi rakha hai)
+RewriteRule ^index\.html$ https://flpressurewashingjacksonville.com/ [R=301,L]
+
+# Clean URLs (bina .html) -> asli .html pages
+# Google ne ye 8 URLs dhoond liye thay, lekin ye 404 thay. Ab ye apne page par jayein ge.
+RewriteRule ^house-washing/?$ /house-washing.html [R=301,L]
+RewriteRule ^driveway-concrete-cleaning/?$ /driveway-concrete-cleaning.html [R=301,L]
+RewriteRule ^sidewalk-patio-cleaning/?$ /sidewalk-patio-cleaning.html [R=301,L]
+RewriteRule ^roof-soft-washing/?$ /roof-soft-washing.html [R=301,L]
+RewriteRule ^fence-deck-cleaning/?$ /fence-deck-cleaning.html [R=301,L]
+RewriteRule ^paver-cleaning-sealing/?$ /paver-cleaning-sealing.html [R=301,L]
+RewriteRule ^window-cleaning/?$ /window-cleaning.html [R=301,L]
+RewriteRule ^gutter-cleaning/?$ /gutter-cleaning.html [R=301,L]
+RewriteRule ^pool-deck-cleaning/?$ /pool-deck-cleaning.html [R=301,L]
+RewriteRule ^screen-enclosure-pool-cage-cleaning/?$ /screen-enclosure-pool-cage-cleaning.html [R=301,L]
+RewriteRule ^dryer-vent-cleaning/?$ /dryer-vent-cleaning.html [R=301,L]
+RewriteRule ^rust-stain-removal/?$ /rust-stain-removal.html [R=301,L]
+RewriteRule ^commercial-exterior-cleaning/?$ /commercial-exterior-cleaning.html [R=301,L]
+RewriteRule ^service-areas/?$ /service-areas.html [R=301,L]
+RewriteRule ^privacy-policy/?$ /privacy-policy.html [R=301,L]
+RewriteRule ^quote/?$ /quote.html [R=301,L]
+
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
