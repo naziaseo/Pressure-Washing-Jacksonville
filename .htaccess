@@ -1,4 +1,22 @@
-RewriteEngine On
+RewriteEngine OnRewriteCond %{HTTP_HOST} ^www\.flpressurewashingjacksonville\.com$ [NC]
+RewriteRule ^(.*)$ https://flpressurewashingjacksonville.com/$1 [R=301,L]
+RewriteRule ^house-washing/?$ /house-washing.html [R=301,L]
+RewriteRule ^driveway-concrete-cleaning/?$ /driveway-concrete-cleaning.html [R=301,L]
+RewriteRule ^sidewalk-patio-cleaning/?$ /sidewalk-patio-cleaning.html [R=301,L]
+RewriteRule ^roof-soft-washing/?$ /roof-soft-washing.html [R=301,L]
+RewriteRule ^fence-deck-cleaning/?$ /fence-deck-cleaning.html [R=301,L]
+RewriteRule ^paver-cleaning-sealing/?$ /paver-cleaning-sealing.html [R=301,L]
+RewriteRule ^window-cleaning/?$ /window-cleaning.html [R=301,L]
+RewriteRule ^gutter-cleaning/?$ /gutter-cleaning.html [R=301,L]
+RewriteRule ^pool-deck-cleaning/?$ /pool-deck-cleaning.html [R=301,L]
+RewriteRule ^screen-enclosure-pool-cage-cleaning/?$ /screen-enclosure-pool-cage-cleaning.html [R=301,L]
+RewriteRule ^dryer-vent-cleaning/?$ /dryer-vent-cleaning.html [R=301,L]
+RewriteRule ^rust-stain-removal/?$ /rust-stain-removal.html [R=301,L]
+RewriteRule ^commercial-exterior-cleaning/?$ /commercial-exterior-cleaning.html [R=301,L]
+RewriteRule ^service-areas/?$ /service-areas.html [R=301,L]
+RewriteRule ^privacy-policy/?$ /privacy-policy.html [R=301,L]
+RewriteRule ^quote/?$ /quote.html [R=301,L]
+
 RewriteRule ^index\.html$ https://flpressurewashingjacksonville.com/ [R=301,L]
 
 <IfModule mod_headers.c>
