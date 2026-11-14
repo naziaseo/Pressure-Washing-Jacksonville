@@ -1,23 +1,21 @@
-# Image Size Attributes — Screaming Frog batch 4, LAST batch (14 Nov 2026)
+# "Reply within 24 hours" hatana — 13 service pages + quote page (14 Nov 2026)
 
 ## Kya theek kiya gaya
-25 image tags mein width/height add ki gayi hai (7 files). Is se page
-load hote waqt photos ki jagah pehle se reserve ho jati hai aur page
-"jump" nahi karta (layout shift khatam). Photos ki dikhne wali size
-mein koi farq nahi aayega — CSS wahi hai.
+"Reply within 24 hours" / "We reply within 24 hours" wali baat in 14 files
+se hata di gayi hai (kul 39 jagah):
+- 6 redesigned pages (house, driveway, sidewalk, roof, fence, paver): trust
+  line, stat strip, CTA line, FAQ jawab
+- 7 purani pages (window, gutter, pool-deck, screen-enclosure, dryer-vent,
+  rust-stain-removal, commercial): hours wala paragraph, CTA line
+- quote.html: meta description, intro, note
 
-Files: index.html (4 tags), house-washing.html (3), driveway (3),
-sidewalk (3), roof (6), fence (3), paver (3). Har file mein sirf
-<img> wali lines badli hain — aur kuch nahi.
+Stat strip mein "Reply Within 24 Hours" ki jagah "Jacksonville, FL" wala
+stat laga diya hai, taake 4 stats barabar rahen. Koi aur text nahi badla.
 
 ## Upload steps (ek hi push)
 1. Zip ko extract karein.
-2. 7 HTML files ko project folder (site name) mein copy karke REPLACE
-   karein — files seedha root mein daalein, kisi subfolder mein nahi.
+2. `live` folder ke andar wali 14 HTML files ko project folder (site name)
+   ke ROOT mein copy karke REPLACE karein — poora folder upload nahi karna,
+   sirf files.
 3. VS Code mein Source Control se commit + push karein.
 4. Muse ko batayein — wo live check kar ke confirm karegi.
-
-## Iske baad
-Screaming Frog ke saare issues theek ho jayenge. Phir dobara
-Screaming Frog crawl kar ke dekh sakte hain — sirf "Multiple H2s"
-reh jayega jo koi masla nahi hai.
