@@ -274,19 +274,17 @@
       @media(max-width:820px){.header-inner{flex-wrap:wrap;gap:18px;padding:18px 0 14px}.main-nav{order:3;width:100%;justify-content:center;flex-wrap:wrap}.nav-dropdown-menu{left:50%;transform:translateX(-50%)}.hero{min-height:620px;background-position:center 38%}.topbar-inner{gap:6px 18px;font-size:.82rem}}
       @media(max-width:620px){.container{width:min(var(--container),calc(100% - 26px))}.header-inner{justify-content:center}.brand{width:100%;justify-content:center}.main-nav{gap:12px 18px;font-size:.78rem}.hero{min-height:0;background-position:55% center}.hero-copy{text-align:center}.cta-row{justify-content:center}.trust-pill{justify-content:center}.phone-cta{width:100%}}
     
-/* Guarantee boxes: 3 equal columns across the full width (grid was 4 columns, so the 4th stayed empty and the boxes looked left-aligned) */
-.guarantee .benefits-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* Guarantee boxes: 2 equal columns, centered as a group (24-Hour Reply box removed) */
+.guarantee .benefits-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:820px;margin:0 auto}
 /* Keep long text (e.g. the email address) inside the boxes instead of overflowing */
 .guarantee .benefit-item p{overflow-wrap:break-word;word-break:break-word}
 /* Why Choose Us: 6 boxes as 3+3 instead of 4+2 */
 .why-us .benefits-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:1080px){
 .guarantee .benefits-grid,.why-us .benefits-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.guarantee .benefits-grid .benefit-item:last-child{grid-column:1/-1}
 }
 @media (max-width:620px){
 .guarantee .benefits-grid,.why-us .benefits-grid{grid-template-columns:1fr}
-.guarantee .benefits-grid .benefit-item:last-child{grid-column:auto}
 }
     </style>
     <link rel="preload" href="styles.css?v=20261108-service-heroes" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -599,10 +597,6 @@
             <div class="benefit-item">
               <h3>Working Hours</h3>
               <p>Monday to Friday, 9:00 AM to 4:00 PM Eastern Time.</p>
-            </div>
-            <div class="benefit-item">
-              <h3>24-Hour Reply</h3>
-              <p>We reply to estimate requests within 24 hours. Call 877-367-5979 or email info@flpressurewashingjacksonville.com.</p>
             </div>
           </div>
         </div>
