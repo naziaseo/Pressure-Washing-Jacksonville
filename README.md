@@ -1,23 +1,23 @@
-# Image Compression — Screaming Frog batch 3 (14 Nov 2026)
+# Image Size Attributes — Screaming Frog batch 4, LAST batch (14 Nov 2026)
 
-## Kya kiya gaya
-20 images compress ki gayi hain — total 7.4MB se 2.6MB (65% kam).
-Sab se bari file ab 229kB hai (pehle 562kB thi). Photos wahi hain,
-sirf size chhota hai — nazar mein koi farq nahi aayega.
+## Kya theek kiya gaya
+25 image tags mein width/height add ki gayi hai (7 files). Is se page
+load hote waqt photos ki jagah pehle se reserve ho jati hai aur page
+"jump" nahi karta (layout shift khatam). Photos ki dikhne wali size
+mein koi farq nahi aayega — CSS wahi hai.
+
+Files: index.html (4 tags), house-washing.html (3), driveway (3),
+sidewalk (3), roof (6), fence (3), paver (3). Har file mein sirf
+<img> wali lines badli hain — aur kuch nahi.
 
 ## Upload steps (ek hi push)
 1. Zip ko extract karein.
-2. Extract hone wale `assets` folder ko project folder (site name)
-   mein copy karein — jab poochhe to "Replace the files in the
-   destination" dabayein. (Poora zip wala folder project mein mat
-   daalein — sirf `assets` folder copy karein.)
+2. 7 HTML files ko project folder (site name) mein copy karke REPLACE
+   karein — files seedha root mein daalein, kisi subfolder mein nahi.
 3. VS Code mein Source Control se commit + push karein.
 4. Muse ko batayein — wo live check kar ke confirm karegi.
 
-NOTE: Images 7 din tak browser cache mein rehti hain, is liye
-nayi halki photos ka faida aahista aahista nazar aayega — ye normal
-hai, dobara upload karne ki zaroorat nahi.
-
-## Iske baad kya baqi hai
-- 12 images mein width/height nahi hai — HTML mein add karna hai
-  (aakhri Screaming Frog batch).
+## Iske baad
+Screaming Frog ke saare issues theek ho jayenge. Phir dobara
+Screaming Frog crawl kar ke dekh sakte hain — sirf "Multiple H2s"
+reh jayega jo koi masla nahi hai.
