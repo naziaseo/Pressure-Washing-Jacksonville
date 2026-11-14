@@ -287,10 +287,16 @@
 .guarantee .benefits-grid,.why-us .benefits-grid{grid-template-columns:1fr}
 }
     
-/* What Can We Remove list: 2-column grid, centered like the intro text (was a single left column with a big empty gap on the right) */
+/* What Can We Remove list: 2 columns sized to the words, centered as a group (was a single left column with a big empty gap) */
 .problems .problem-list-wrap{max-width:890px;margin:24px auto 0}
-.problems .problem-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 48px;margin:0;padding:0;list-style-position:inside}
+.problems .problem-list{display:grid;grid-template-columns:repeat(2,max-content);justify-content:center;gap:10px 64px;margin:0;padding:0;list-style-position:inside}
 @media (max-width:620px){.problems .problem-list{grid-template-columns:1fr}}
+    
+/* Contact CTA: buttons were squeezed by the long text, so labels wrapped onto 3 lines */
+.final-cta .cta-content{flex:1;min-width:0}
+.final-cta .cta-actions{flex-shrink:0;flex-wrap:wrap}
+.final-cta .btn{white-space:nowrap}
+.final-cta .phone-inline{white-space:nowrap}
     </style>
     <link rel="preload" href="styles.css?v=20261108-service-heroes" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="styles.css?v=20261108-service-heroes" /></noscript>
@@ -836,7 +842,7 @@
           <div class="cta-content">
             <h2>Ready for a Cleaner Property?</h2>
             <p>Whether you need house washing, driveway cleaning, roof cleaning, patio care, or a full exterior refresh, we can help you start with a clear estimate tailored to your property.</p>
-            <p>Working hours: Monday to Friday, 9:00 AM to 4:00 PM Eastern Time. 7-Day Satisfaction Check: if a spot remains within 7 days, we will re-clean that spot free.</p>
+            <p>7-Day Satisfaction Check: if a spot remains within 7 days, we will re-clean that spot free.</p>
           </div>
           <div class="cta-actions">
             <a href="mailto:info@flpressurewashingjacksonville.com?subject=Pressure%20Washing%20Estimate%20Request%20-%20Jacksonville%2C%20FL" class="btn btn-primary">Get a Free Estimate <span aria-hidden="true">→</span></a>
