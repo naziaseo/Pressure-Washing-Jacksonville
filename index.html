@@ -286,6 +286,11 @@
 @media (max-width:620px){
 .guarantee .benefits-grid,.why-us .benefits-grid{grid-template-columns:1fr}
 }
+    
+/* What Can We Remove list: 2-column grid, centered like the intro text (was a single left column with a big empty gap on the right) */
+.problems .problem-list-wrap{max-width:890px;margin:24px auto 0}
+.problems .problem-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 48px;margin:0;padding:0;list-style-position:inside}
+@media (max-width:620px){.problems .problem-list{grid-template-columns:1fr}}
     </style>
     <link rel="preload" href="styles.css?v=20261108-service-heroes" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="styles.css?v=20261108-service-heroes" /></noscript>
