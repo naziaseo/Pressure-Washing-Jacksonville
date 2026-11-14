@@ -1,21 +1,38 @@
-# CSS Version Fix - 15 pages (service heroes ko live dikhane ke liye)
+# Screaming Frog Fixes — 2 High Issues (14 Nov 2026)
 
-Asal masla: service pages abhi bhi `styles.css?v=20261106-gallery` load kar rahe the.
-Browser ne us purane link wali CSS ko 1 saal ke liye save kar rakha hai, is liye nayi CSS
-(paint roller hatane wali fix) un pages par lag hi nahi rahi thi. Homepage par fix aa gaya
-tha kyunki index.html mein naya version tha, lekin service pages par purana version tha.
+## Kya theek kiya gaya
 
-Fix: in 15 files mein CSS version `?v=20261108-service-heroes` kar diya hai, taake
-browser nayi CSS fresh load kare. Sirf version badla hai - text, hours, 7-Day sab waisa hi hai.
-Saath mein service-areas.html aur quote.html ki hero photo bhi theek kar di hai
-(dono par bhi paint roller wali purani photo lagi thi):
-- service-areas.html -> driveway-concrete.jpg
-- quote.html -> house-washing.jpg
+### 1. Missing `<body>` tag — 4 live pages + paver
+Driveway, Sidewalk, Roof aur Fence pages mein `<body>` khulne wala tag
+ghaib tha (file `</head>` ke baad seedha `<header>` se shuru hoti thi).
+Har file mein sirf 1 line add ki gayi hai: `</head>` ke baad `<body>`.
+Koi aur change nahi hai. Paver wali file mein bhi yehi fix hai.
 
-## Upload karne ka tareeqa
-1. Is folder ki 15 HTML files ko project ke root folder mein copy karke replace karein.
-2. Commit karein: "Load fresh styles on all service pages"
-3. Push karein. Phir mujhe batayein, main live check kar dungi.
+### 2. 404 images — 3 roof specimen photos
+Roof page ki FIELD GUIDE quiz wali 3 photos server par nahi thin
+(404): algae.jpg, lichen.jpg, moss.jpg. Ye 3 photos is zip mein
+compressed hain (1920px -> 800px, ~3MB -> ~450kB total).
 
-Note: index.html aur styles.css pehle hi push ho chuke hain, unko dobara upload karne ki
-zaroorat NAHI hai. Photos bhi pehle hi upload ho chuki hain.
+## Upload steps (ek hi push)
+
+1. Zip ko extract karein.
+2. 5 HTML files ko project folder (site name) mein copy karke REPLACE
+   karein: driveway-concrete-cleaning.html, sidewalk-patio-cleaning.html,
+   roof-soft-washing.html, fence-deck-cleaning.html,
+   paver-cleaning-sealing.html
+   - NOTE: paver wali file abhi live nahi hai — ye fixed copy rakh lein,
+     jab review kar ke upload karein to yehi wali use karein.
+3. 3 JPGs ko is folder mein copy karein:
+   assets/images/roof-guide/algae.jpg
+   assets/images/roof-guide/lichen.jpg
+   assets/images/roof-guide/moss.jpg
+   (agar roof-guide folder na ho to bana lein)
+4. VS Code mein Source Control se commit + push karein.
+5. Muse ko batayein — wo live check kar ke confirm karegi.
+
+## Baaki issues (agle batch mein)
+- 12 page titles 60 characters se lambe hain — shorten karne hain.
+- 16 images 100 kB se bari hain — compress karni hain.
+- 12 images mein width/height nahi hai — add karna hai.
+- Screen Enclosure wali 1 H2 78 characters ki hai — shorten karni hai.
+- Multiple H2s aur CSP header koi masla nahi hain — fix ki zaroorat nahi.
