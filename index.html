@@ -297,8 +297,8 @@
 .final-cta .cta-actions{flex-shrink:0;flex-wrap:wrap}
 .final-cta .btn{white-space:nowrap}
 .final-cta .phone-inline{white-space:nowrap}
-/* Contrast fix (PageSpeed): red eyebrow on the dark guarantee section was 3.01:1, needs 4.5:1 */
-.guarantee-dark .eyebrow{color:#ff6b6b}
+/* Contrast fix (PageSpeed): red eyebrow on the dark guarantee section was 3.01:1, needs 4.5:1. Stronger selector (section.) so this beats the same rule in styles.css, which loads after this block. */
+section.guarantee-dark .eyebrow{color:#ff6b6b}
     </style>
     <link rel="preload" href="styles.css?v=20261108-service-heroes" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="styles.css?v=20261108-service-heroes" /></noscript>
