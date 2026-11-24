@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Jacksonville Pressure Washing Market Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f2ee; --surface:#ffffff; --surface2:#ece9e2; --ink:#17181a; --muted:#5b5e63; --line:#d9d4c9;
+  --red:#c2042b; --red-soft:#fbe9ec; --teal:#0e6b6b; --teal-soft:#e2f0ef; --amber:#9a6200; --amber-soft:#fdf0d5;
+  --green:#1d6b3a; --green-soft:#e4f2e7; --chart:#c2042b; --chart2:#0e6b6b;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#121315; --surface:#1b1d20; --surface2:#232529; --ink:#f0eee9; --muted:#a7a9ad; --line:#33363b;
+  --red:#ff4d6d; --red-soft:#3a1620; --teal:#4fc4c0; --teal-soft:#14302f; --amber:#f0b84a; --amber-soft:#3a2c10;
+  --green:#6fce8d; --green-soft:#17301f; --chart:#ff4d6d; --chart2:#4fc4c0; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;font-size:16.5px;line-height:1.55}
+a{color:var(--teal);text-underline-offset:2px}
+h1,h2,h3{font-family:"Barlow Condensed","Barlow",sans-serif;line-height:1.05;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2.25rem}
+
+/* Hero */
+.hero{background:#141518;color:#f2f0ea;padding:44px 0 36px;border-bottom:6px solid var(--red)}
+.hero .kicker{font-family:"Barlow Semi Condensed";letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#ff8fa3;font-weight:600}
+.hero h1{font-size:clamp(38px,6.5vw,64px);font-weight:700;text-transform:uppercase;margin:10px 0 14px;max-width:18ch;line-height:1.12;padding-bottom:4px}
+.hero p.lede{font-size:19px;max-width:68ch;color:#d8d5cd;margin:0}
+.hero .meta{margin-top:18px;font-size:14px;color:#a9a69d;display:flex;flex-wrap:wrap;gap:8px 22px}
+.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stat{background:#1e2023;border:1px solid #34363a;padding:16px}
+.stat b{display:block;font-family:"Barlow Condensed";font-size:34px;font-weight:700;color:#fff;line-height:1}
+.stat span{display:block;margin-top:6px;font-size:13.5px;color:#b9b6ad;line-height:1.35}
+.stat i{font-style:normal;display:block;margin-top:6px;font-size:11.5px;color:#83817a}
+@media(max-width:760px){.statgrid{grid-template-columns:1fr 1fr}}
+
+/* Nav */
+nav.toc{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:14.5px;padding:9px 12px;border-radius:6px}
+@media(max-width:640px){nav.toc .wrap{flex-wrap:wrap;overflow-x:visible}}
+nav.toc a:hover{background:var(--surface2)}
+
+section{padding:44px 0 8px}
+.sec-head{margin-bottom:18px}
+.sec-head .num{font-family:"Barlow Semi Condensed";color:var(--red);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+.sec-head h2{font-size:clamp(30px,4.5vw,44px);font-weight:700;text-transform:uppercase;margin-top:4px}
+.sec-head p{color:var(--muted);max-width:72ch;margin:8px 0 0}
+h3.sub{font-size:24px;font-weight:600;text-transform:uppercase;margin:30px 0 10px}
+p{margin:0 0 12px}
+.src{font-size:12.5px;color:var(--muted)}
+.src a{color:var(--muted)}
+
+.verdict{background:var(--surface);border:2px solid var(--ink);padding:24px;margin:26px 0}
+.verdict h3{font-size:26px;text-transform:uppercase;margin-bottom:8px}
+.verdict ol{margin:10px 0 0;padding-left:22px}
+.verdict li{margin-bottom:8px}
+.alert{background:var(--amber-soft);border-left:5px solid var(--amber);padding:16px 18px;margin:20px 0}
+.alert b{color:var(--amber)}
+.good{background:var(--teal-soft);border-left:5px solid var(--teal);padding:16px 18px;margin:20px 0}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);padding:20px}
+.card h3{font-size:22px;text-transform:uppercase;margin-bottom:8px}
+.card p:last-child{margin-bottom:0}
+.card ul{margin:6px 0 0;padding-left:19px}
+.card li{margin-bottom:6px}
+
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px;margin:12px 0 6px}
+th{font-family:"Barlow Semi Condensed";text-transform:uppercase;letter-spacing:.05em;font-size:13px;text-align:left;background:var(--surface2);padding:10px 12px;border-bottom:2px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hl td{background:var(--red-soft)}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.tag.high{background:var(--red-soft);color:var(--red)}
+.tag.mid{background:var(--amber-soft);color:var(--amber)}
+.tag.low{background:var(--green-soft);color:var(--green)}
+.tablewrap{overflow-x:auto}
+@media(max-width:640px){
+  .stack-table thead{display:none}
+  .stack-table tr{display:block;border-bottom:2px solid var(--line);padding:8px 0}
+  .stack-table td{display:block;border:none;padding:4px 12px}
+  .stack-table td.num{text-align:left}
+}
+
+.chartbox{background:var(--surface);border:1px solid var(--line);padding:20px;margin:14px 0}
+.chartbox h3{font-size:22px;text-transform:uppercase}
+.bars{display:flex;align-items:flex-end;gap:6px;height:170px;margin-top:18px;border-bottom:2px solid var(--line)}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.bar i{display:block;width:100%;background:var(--chart);min-height:3px}
+.bar.hot i{background:var(--chart2)}
+.bar b{font-size:12.5px;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.bar span{font-size:11.5px;color:var(--muted);margin-top:6px;position:relative;top:22px}
+.bars{margin-bottom:30px}
+
+.phase{display:grid;grid-template-columns:170px 1fr;gap:0;border:1px solid var(--line);background:var(--surface);margin-bottom:16px}
+.phase .when{background:var(--ink);color:var(--bg);padding:20px}
+.phase .when b{font-family:"Barlow Condensed";font-size:24px;text-transform:uppercase;display:block;line-height:1.05}
+.phase .when span{font-size:13.5px;opacity:.8}
+.phase .body{padding:20px}
+.phase ol{margin:0;padding-left:20px}
+.phase li{margin-bottom:12px}
+.phase li b{display:block}
+@media(max-width:640px){.phase{grid-template-columns:1fr}}
+
+.dont{columns:2;column-gap:28px;margin:8px 0 0;padding-left:20px}
+.dont li{margin-bottom:10px;break-inside:avoid}
+@media(max-width:640px){.dont{columns:1}}
+details{background:var(--surface);border:1px solid var(--line);padding:6px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;padding:10px 0;font-size:16.5px}
+details p{padding-bottom:12px}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 44px;color:var(--muted);font-size:14px}
+.pack{display:flex;flex-direction:column;gap:10px;margin:14px 0}
+.packrow{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);padding:14px 16px}
+.packrow .rank{font-family:"Barlow Condensed";font-size:30px;font-weight:700;color:var(--red);min-width:34px;text-align:center}
+.packrow b{font-size:17px}
+.packrow .rev{margin-left:auto;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.packrow .rev b{font-size:19px}
+.small{font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Complete market research · Jacksonville, FL</div>
+    <h1>Beat them — realistically.</h1>
+    <p class="lede">A full research pass on your market, your customers, and your competitors — for Jacksonville Pressure Wash (flpressurewashingjacksonville.com). The honest headline: this market is large and fragmented, but it is brutally review-driven, and you are starting without the one asset that drives it — a Google Business Profile. This page lays out the evidence and the sequenced plan to win anyway.</p>
+    <div class="meta">
+      <span>Research date: 24 November 2026</span>
+      <span>Live Google results verified 24 Nov 2026 where marked</span>
+      <span>Every figure carries its source</span>
+    </div>
+    <div class="statgrid">
+      <div class="stat"><b>227,054</b><span>Owner-occupied homes in the City of Jacksonville alone (57.6% of occupied housing)</span><i>US Census ACS 2020–2024, via Digital Towns / FloridaHomeIQ</i></div>
+      <div class="stat"><b>$421</b><span>Median reported job bill across Jacksonville exterior-cleaning reviews; pressure-washing jobs median $516</span><i>experts.reviews, updated 21 Nov 2026</i></div>
+      <div class="stat"><b>~200</b><span>Pressure washing companies on Google Maps across the four-county metro</span><i>jaxhumor, published 19 Nov 2026</i></div>
+      <div class="stat"><b>$11.47</b><span>Median Google Ads CPC for pressure washing in the US; “roof cleaning near me” costs $20.02</span><i>DataForSEO via Logical Gecko, pulled 14 Nov 2026</i></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#verdict">Verdict</a><a href="#market">Market</a><a href="#prices">Prices</a><a href="#customers">Customers</a><a href="#competitors">Competitors</a><a href="#gaps">Gaps</a><a href="#plan">Winning plan</a><a href="#unknowns">Unverified</a><a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- VERDICT -->
+<section id="verdict" style="padding-top:30px">
+  <div class="verdict">
+    <h3>The honest verdict</h3>
+    <p>You cannot outcompete the leaders head-on in year 1 — and should not try. The top of Google is owned by companies with 200–2,000 five-star reviews, $2M insurance, published prices and 7-day availability. You have none of those yet, and without a Google Business Profile you cannot appear in the local map pack at all or collect Google reviews — the single biggest driver of hiring decisions in this market.</p>
+    <ol>
+      <li><b>Fix the credibility floor first:</b> Duval County Local Business Tax Receipt + $1M general-liability insurance. Florida has <i>no state pressure-washing licence</i>, so “not licensed” is a smaller gap than it sounds.</li>
+      <li><b>Solve the GBP / address problem</b> — it is the #1 strategic project, because without it you are invisible where nearly all local hiring happens.</li>
+      <li><b>Publish prices, add a local 904 number, extend hours</b> beyond Mon–Fri 9–4, and add an online quote route alongside the phone.</li>
+      <li><b>Win the first 20–50 jobs in 2–3 chosen neighbourhoods</b> through Nextdoor, Facebook community groups, realtors and door hangers — not Google Ads at an $11.47 median CPC.</li>
+      <li><b>Attack the genuinely weak competitors first</b> (Ultrasoft, JaxWash, Coastal, Baur, Hydro-Kleen) on responsiveness and availability — not on review count.</li>
+    </ol>
+  </div>
+  <div class="alert"><b>Timing matters:</b> the St. Johns River Water Management District lifted its Phase III water-shortage restrictions on <b>12 Nov 2026</b> after six months of limits, releasing pent-up demand — and the Feb–Apr spring peak is about 10 weeks away. The next 90 days are the window to get credible before the busiest season. <span class="src">Source: <a href="https://hydrowash360.com/blog/pressure-wash-water-restrictions-jacksonville/">Hydro Wash 360</a> (~13 Nov 2026)</span></div>
+</section>
+
+<!-- MARKET -->
+<section id="market">
+  <div class="sec-head">
+    <div class="num">Section 1 · The market</div>
+    <h2>Big, old housing stock, year-round algae</h2>
+    <p>Jacksonville is humid subtropical with no freeze cycle, so biological growth never gets a natural winter kill and humidity averages ~75% year-round — cleaning is possible, and needed, every month.</p>
+  </div>
+  <div class="grid3">
+    <div class="card"><h3>US industry</h3><p>~$1.2B revenue across ~32,193 businesses in 2026. Revenue grows only 0.6% CAGR while establishment count grows 5.8% CAGR — more operators chasing slowly growing revenue. Residential work is ~70% of revenue, and no company holds more than 5% share: highly fragmented.</p><p class="src">IBISWorld via Plyrium / Estimatty 2026 guides; broader “building exterior cleaning” estimates run $1.9–$2.3B (Southeast Soft Wash, ~May 2026)</p></div>
+    <div class="card"><h3>The demand base</h3><p>City of Jacksonville: 977,670 residents; 430,825 housing units; 254,913 detached single-unit homes (59.2%); median household income $69,872; median home value $293,700. Metro (5 counties) ~1,785,500 residents (Census July 2025 estimate).</p><p class="src">US Census Bureau, ACS 2020–2024, via <a href="https://digitaltowns.app/florida/jacksonville/">Digital Towns</a> (verified 14 Oct 2026); metro via Pursuit Real Estate</p></div>
+    <div class="card"><h3>Old homes = more work</h3><p>Duval County: 454,740 housing units, median year built 1986. <b>68.2% were built before 2000 (~310,000 units)</b> and 39.9% before 1980 — older stock means more algae, oxidation and roof-streak work.</p><p class="src">ACS 2020–2024, via <a href="https://www.ugopros.com/how-old-are-homes-in-florida-county-data-from-jacksonville-to-broward">UGO Pros</a></p></div>
+  </div>
+  <div class="good"><b>Order-of-magnitude check (research team's own calculation, not a sourced figure):</b> ~255,000 detached homes in the city; if 20–30% get a professional wash in a given year at the ~$421 median job value, city residential demand alone is roughly <b>$21–32M/year</b> — before St. Johns / Clay / Nassau, commercial and HOA work. Treat as a sanity check only.</div>
+
+  <h3 class="sub">Seasonality — Jacksonville's climate calendar</h3>
+  <p>Consistent across three Jacksonville seasonal guides (Aug–Oct 2026): <a href="https://www.jaxhousewashing.com/guide-best-time-to-pressure-wash-jacksonville/">Jax House Washing</a>, <a href="https://pressurewashinginjacksonvillefl.com/best-time-pressure-wash-jacksonville-fl/">pressurewashinginjacksonvillefl.com</a>, <a href="https://hydrowash360.com/blog/best-time-of-year-to-pressure-wash-house-florida/">Hydro Wash 360</a>.</p>
+  <div class="tablewrap"><table class="stack-table">
+    <thead><tr><th>Window</th><th>What happens</th><th>Demand</th></tr></thead>
+    <tbody>
+      <tr><td><b>Feb–Apr</b></td><td>Oak/pine pollen peaks (heaviest Feb–Mar); humidity lowest Mar–Apr; real-estate listing season starts (market peaks Mar–Jun)</td><td><b>Peak / best window.</b> House washing, driveways, pre-HOA-inspection cleanup, pre-listing prep. Book 1–2 weeks ahead.</td></tr>
+      <tr><td><b>Apr–May</b></td><td>Pool season opens; lovebug season early May (acidic residue)</td><td>Strong. Pool decks, screen enclosures, fences/decks.</td></tr>
+      <tr><td><b>Jun–Sep</b></td><td>Rainy season; humidity 80%+; near-daily afternoon storms; hurricane season opens 1 Jun; fastest algae/mould regrowth (Gloeocapsa magma on shingle roofs)</td><td>Spot work, pre-sale prep and genuine problems only; regrowth fastest. Hurricane-driven emergency surges possible.</td></tr>
+      <tr><td><b>Oct–Nov</b></td><td>Rainy season ends; hurricane season winds down (ends 30 Nov); full summer's algae at its most visible</td><td><b>Second-best window.</b> Roof soft washing, full house washing, paver work. Longest-lasting results.</td></tr>
+      <tr><td><b>Dec–Feb</b></td><td>Cool, dry; slowest regrowth</td><td>Quietest season; best scheduling availability; driveways, commercial flatwork, pre-listing cleanups.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Neighbourhood micro-climates: north-facing walls and homes under live-oak canopy (routine in Mandarin and Ortega) hold moisture and green up first; shaded Mandarin streets grow algae faster than the rest of the neighbourhood; HOA communities send cleaning notices every spring “like clockwork” (JaxRevive / JaxHouseWashing guides).</p>
+
+  <div class="chartbox">
+    <h3>Florida search interest by month — two sources disagree</h3>
+    <p class="small">Monthly volume index for the keyword “pressure washing florida” (Google Keyword Planner &amp; Ahrefs via <a href="https://theseodoctors.com/pressure-washing-seo/florida/">SEO Doctors</a>). The keyword runs 6,000–14,000 searches/month statewide with CPC $10–$22.</p>
+    <div class="bars" role="img" aria-label="Bar chart of monthly search index: January 50, February 48, March 62, April 78, May 90, June 95, July 96, August 92, September 80, October 65, November 52, December 48">
+      <div class="bar"><b>50</b><i style="height:52%"></i><span>Jan</span></div>
+      <div class="bar"><b>48</b><i style="height:50%"></i><span>Feb</span></div>
+      <div class="bar"><b>62</b><i style="height:65%"></i><span>Mar</span></div>
+      <div class="bar"><b>78</b><i style="height:81%"></i><span>Apr</span></div>
+      <div class="bar hot"><b>90</b><i style="height:94%"></i><span>May</span></div>
+      <div class="bar hot"><b>95</b><i style="height:99%"></i><span>Jun</span></div>
+      <div class="bar hot"><b>96</b><i style="height:100%"></i><span>Jul</span></div>
+      <div class="bar hot"><b>92</b><i style="height:96%"></i><span>Aug</span></div>
+      <div class="bar"><b>80</b><i style="height:83%"></i><span>Sep</span></div>
+      <div class="bar"><b>65</b><i style="height:68%"></i><span>Oct</span></div>
+      <div class="bar"><b>52</b><i style="height:54%"></i><span>Nov</span></div>
+      <div class="bar"><b>48</b><i style="height:50%"></i><span>Dec</span></div>
+    </div>
+    <p><b>Conflicting signal, reported honestly:</b> jaxhumor (19 Nov 2026) claims Jacksonville searches peak in <b>January</b>, “when six months of wet-season mildew finally gets its turn on the to-do list.” The keyword data above and US benchmarks point to a spring/early-summer peak instead. US data (DataForSEO, pulled 14 Nov 2026) shows a 2.48× swing between the busiest month (Mar 2026) and slowest (Nov 2025). Net assessment: demand is strongly seasonal, the weight of evidence points to <b>Mar–Aug peak with a secondary Oct–Nov window</b>, and November is the trough — which matches your current quiet period.</p>
+    <p class="small">Also from the research: ~178,990 US monthly searches across 16 tracked pressure-washing keywords; “pressure washing near me” 33,100/mo at $7.04 CPC; “roof cleaning” 18,100/mo at $8.29 CPC (LuxFin Media). Pressure washing has <b>no Local Services Ads category as of November 2026</b> — the “Google Guaranteed” badge route is closed to everyone in this trade. Signal SEO notes a “$450 average pressure washing job value” for Jacksonville and that Riverside and San Marco return different map packs — suburbs are separate search markets.</p>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices">
+  <div class="sec-head">
+    <div class="num">Section 1 · Continued</div>
+    <h2>What Jacksonville customers actually pay</h2>
+    <p>Published prices only, cross-checked across six public Jacksonville pricing sources (all Nov 2026). Almost none of the top-10 by reviews publish prices — which is exactly why publishing yours is a wedge (see Gaps).</p>
+  </div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Service</th><th>Typical Jacksonville range (2026)</th><th>Sources</th></tr></thead>
+    <tbody>
+      <tr><td><b>House wash (soft wash)</b></td><td><b>$225–$650</b> · 1-story $250–$550; 2-story $450–$850; ~$0.15–$0.40/sq ft of wall</td><td>Jax Pro Pressure Wash; Safe Touch; BoldWash; AquaClean ($249–$599)</td></tr>
+      <tr><td><b>House + driveway bundle</b></td><td><b>$375–$700</b></td><td>Jax Pro Pressure Wash</td></tr>
+      <tr><td><b>Full exterior incl. roof</b></td><td><b>$850–$1,900</b></td><td>Jax Pro Pressure Wash</td></tr>
+      <tr><td><b>Roof soft wash</b></td><td><b>$350–$1,400</b> · typical $400–$600 standard shingle; tile $650–$1,900; ~$0.20–$0.60/sq ft roof</td><td>Jax Pro; Safe Touch ($350–$1,200); AquaClean ($349–$899); Got Pressure Jax (min $350)</td></tr>
+      <tr><td><b>Driveway / concrete</b></td><td><b>$95–$400</b> · 2-car $95–$200; 3-car $150–$250; ~$0.12–$0.30/sq ft</td><td>Jax Pro; Safe Touch ($150–$400); BoldWash ($125–$300); Got Pressure Jax; Stallone's: $0.20/sq ft, <b>$250 minimum</b></td></tr>
+      <tr><td><b>Paver cleaning</b></td><td><b>$150–$550</b></td><td>Jax Pro; Stallone's: from $0.22/sq ft</td></tr>
+      <tr><td><b>Paver clean + re-sand + seal</b></td><td><b>$1.25–$3.50/sq ft</b></td><td>Jax Pro; Safe Touch ($1.75–$3.25); Seal Deal ($1.99–$2.99); BoldWash</td></tr>
+      <tr><td><b>Pool deck</b></td><td><b>$150–$400</b></td><td>Safe Touch; BoldWash ($150–$350)</td></tr>
+      <tr><td><b>Screen enclosure / lanai</b></td><td><b>$150–$300</b></td><td>Safe Touch; BoldWash</td></tr>
+      <tr><td><b>Fence (wood/vinyl)</b></td><td><b>$200–$400</b> per 150–200 lin ft; $0.50–$1.50/lin ft</td><td>Safe Touch; BoldWash; Got Pressure Jax</td></tr>
+      <tr><td><b>Gutter brightening (exterior)</b></td><td><b>$100–$250</b></td><td>BoldWash</td></tr>
+      <tr><td><b>Deck / patio</b></td><td><b>$149–$499</b></td><td>AquaClean</td></tr>
+      <tr><td><b>Job minimums in market</b></td><td>$75 (AquaClean) to $250 (Stallone's; Got Pressure Jax house wash)</td><td>As cited</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Pricing pages: <a href="https://www.jaxpropressurewash.com/pressure-washing-cost-jacksonville/">jaxpropressurewash.com</a> · <a href="https://www.safetouchwash.com/guides/pressure-washing-cost-jacksonville">safetouchwash.com</a> · <a href="https://pressurewashjacksonvillefl.com/">pressurewashjacksonvillefl.com</a> · <a href="https://www.got-pressure-jax.com/">got-pressure-jax.com</a> · <a href="https://www.aquacleanjax.com/faq.html">aquacleanjax.com</a> · <a href="https://sealdealpw.com/paver-sealing">sealdealpw.com</a> · <a href="https://www.stallonesprowash.com/pressure-washing-jacksonville-fl/">stallonesprowash.com</a></p>
+  <div class="good"><b>What customers report paying:</b> median reported job bill <b>$421</b>; pressure-washing jobs median <b>$516</b>, middle half $251–$838; and 99–100% of price-rating customers called the price “great” or “reasonable.” Price is rarely the complaint in this market — <i>surprise</i> price is. <span class="src">Source: <a href="https://experts.reviews/exterior-cleaning/fl/jacksonville/?design=report&job=Power%2Fpressure%20washing">experts.reviews</a>, updated 21 Nov 2026</span></div>
+</section>
+
+<!-- CUSTOMERS -->
+<section id="customers">
+  <div class="sec-head">
+    <div class="num">Section 2 · Your customers</div>
+    <h2>Who hires, what decides it, what they complain about</h2>
+    <p>The winners in this market are not differentiated on cleaning ability — everyone is 4.8–5.0 stars. They are differentiated on trust signals, responsiveness, and how they handle problems.</p>
+  </div>
+
+  <h3 class="sub">The six customer segments</h3>
+  <div class="grid2">
+    <div class="card"><h3>1 · Homeowners — the core (~70% of industry revenue)</h3>
+      <ul>
+        <li><b>St. Johns County premium</b> (Nocatee, Ponte Vedra, Fruit Cove, Bartram Springs, 32259): median sale price $529,000–$564,449 (Oct 2026, NEFAR); 32259 median $599,000, selling in 29 days; tightest inventory (3.8 months' supply). Newer homes, pavers, pool enclosures, tile roofs, HOA/CDD enforcement. Highest tickets — and contested by every top competitor.</li>
+        <li><b>Southside / Baymeadows / Intracoastal West</b> (32224, 32257): 32224 sold in a median 15 days in Oct 2026; 32257 in 24.5 days at 100% of list. Strong demand, mid-high value.</li>
+        <li><b>San Marco / Riverside / Avondale / Ortega:</b> older pre-1980 stock, live-oak canopy, shaded north walls that green up first; stucco and painted siding needing soft wash; pride-of-ownership buyers.</li>
+        <li><b>Mandarin:</b> large lots, heavy oak canopy, algae-prone shaded streets; established suburban families.</li>
+        <li><b>Westside / Northside / Arlington / Oceanway:</b> lower price points ($150K starter homes on the Northside to ~$300K Duval median) — fewer premium competitors based there; volume opportunity.</li>
+        <li><b>Jacksonville Beaches / Ponte Vedra Beach:</b> salt air, sand, higher exterior wear; beach-focused operators (Five Star, Beachside, Baur, Diamond Edge) dominate.</li>
+      </ul>
+      <p class="src">Sources: startpackingup.com (Nov 2026); Elite Realty Group market update (20 Nov 2026); taniyarefai.com (17 Oct 2026); propcash.co</p>
+    </div>
+    <div class="card"><h3>2 · HOAs / CDDs / condo associations</h3>
+      <p>Recurring, high-value — but gated by insurance. ~12% of Northeast Florida residents live in Community Development Districts; St. Johns has 35+ CDDs covering 25–35% of its population (Nocatee, SilverLeaf, Beachwalk, Durbin, RiverTown); Duval has 15–20 (eTown, Bartram Park, Tamaya). 47 master-planned communities tracked, average HOA dues $1,847/yr (+ ~$2,400/yr CDD where applicable). St. Johns County alone has <b>242 registered condo associations covering 14,747 units</b> (Aug 2026).</p>
+      <p><b>The gate:</b> HOA vendors in Jacksonville must carry a Business Tax Receipt and <b>$1M general liability minimum</b> with the association named as additional insured. You are currently locked out of this segment entirely — insurance (Plan, Phase 0) is what unlocks it.</p>
+      <p class="src">Sources: eyeonjacksonville.com; movewithmomentum.com HOA/CDD database (Q2 2026); hoacensus.com; First Coast Association Management</p>
+    </div>
+    <div class="card"><h3>3 · Property managers &amp; landlords</h3>
+      <p>Rental turnover cleans. Hydro-Kleen's reviews show repeat rental-property work (“second time we've used them… for a rental property we own”). DLM Property Management's directory lists 95 pressure washers serving Jacksonville and introduces accredited members to the homes it manages — a channel worth noting.</p>
+      <p class="src">Source: <a href="https://dlmpropertygroup.com/directory/fl/jacksonville/pressure-washing">dlmpropertygroup.com directory</a></p>
+    </div>
+    <div class="card"><h3>4 · Realtors / pre-listing prep</h3>
+      <p>The real-estate market peaks Mar–Jun; guides uniformly recommend washing 1–2 weeks before listing photos. Oct 2026 saw 1,902 closed sales (~$972M) across the four counties, with ~964 more closed through 21 Nov 2026. Every listing is a potential $300–$700 job.</p>
+      <p class="src">Source: startpackingup.com Jacksonville housing market</p>
+    </div>
+    <div class="card"><h3>5 · Commercial</h3>
+      <p>Storefronts, restaurants, parking lots, churches, HOA common areas, post-construction cleanup (Beachside's commercial book); offices and retail (Clean &amp; Pristine manages 14 commercial properties on quarterly schedules); short-term rental hosts and out-of-state owners (BB Pressure Washing targets these explicitly). Note: commercial cleaning is sales-taxable in Florida; residential generally is not.</p>
+    </div>
+    <div class="card"><h3>6 · 55+ communities</h3>
+      <p>Del Webb Nocatee ($450K–$900K), Del Webb Ponte Vedra ($400K–$800K), Del Webb eTown/Sweetwater, Stillwater, Cascades at World Golf Village — older owners who outsource maintenance and value trust and communication.</p>
+      <p class="src">Source: nova55living.com Jacksonville 55+ cost comparison</p>
+    </div>
+  </div>
+
+  <h3 class="sub">What they search for</h3>
+  <p>Dominant pattern: “pressure washing [city/neighbourhood]”, “driveway cleaning [city]”, “house washing [city]” (SEO Doctors). Google's “People also ask” for the Jacksonville query (verified live, 24 Nov 2026) is dominated by price: <i>What is a fair price for pressure washing? What is the average price for pressure washing in Florida? How much to pressure wash a 1000 sq ft house? Is pressure washing a house worth it?</i> Searches are photo-driven — “homeowners want proof, then a price” (Signal SEO). And “near me” dominates US volume (33,100/mo) — precisely the query class you cannot win without a GBP.</p>
+
+  <h3 class="sub">What decides the choice</h3>
+  <p>From review-text analysis across Jacksonville companies (industryoversight, data verified 9 Nov 2026, 2,466 reviews of 22 companies): customers most often praise <b>quality (95%), responsiveness (90%), professionalism (89%)</b>. The deciding factors, in order:</p>
+  <div class="grid3">
+    <div class="card"><h3>Reviews themselves</h3><p>“I chose Five Star because of their great reviews” is a verbatim pattern in review text. Review count is the primary trust proxy. <span class="src">(experts.reviews, Nov 2026)</span></p></div>
+    <div class="card"><h3>Responsiveness</h3><p>Fast quotes (text/email), fast scheduling, answering the phone. Competitors advertise “free written quotes”, “same-day estimates”, 24/7 AI estimators (AquaClean), and “Schedule” buttons on their GBP.</p></div>
+    <div class="card"><h3>Punctuality &amp; professionalism</h3><p>On-time arrival, uniformed crews, clear communication.</p></div>
+    <div class="card"><h3>Fair, transparent pricing</h3><p>99–100% of Jacksonville price verdicts were “great” or “reasonable”; zero “overpriced” at Stallone's and Bullseye.</p></div>
+    <div class="card"><h3>Care for the property</h3><p>Protecting plants/landscaping, covering outlets, moving and returning furniture/planters — mentioned in a large share of 5-star reviews.</p></div>
+    <div class="card"><h3>Insurance &amp; guarantees</h3><p>Stated prominently by nearly every established competitor ($2M GL is the common claim; 7-day guarantees, 1–5 year warranties). Table stakes for HOA/commercial work; a trust signal for residential.</p></div>
+  </div>
+  <p><b>Thoroughness / attention to detail</b> is the single most common praise phrase cluster across all companies.</p>
+
+  <h3 class="sub">What they complain about — your differentiation openings</h3>
+  <p>The overall complaint rate among top companies is very low — <b>1% bad jobs (1–2★ in the last 24 months)</b> across Jacksonville's top 10 exterior cleaners (experts.reviews, updated 21 Nov 2026). But the complaints that exist cluster into seven repeatable themes:</p>
+  <div class="tablewrap"><table class="stack-table">
+    <thead><tr><th>#</th><th>Complaint theme</th><th>Documented examples</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>Plant / landscaping chemical damage</b></td><td>Five Star: “recurring low-star reviews describe… damage to landscaping from chemicals” (experts.reviews). McCarthy's Cleaning (Yelp, 2018): chemicals killed plants, grass, trees and 5 bottlebrush bushes; ~$1,500 damage; owner refused to make it right. Full Force (Yelp, Aug 2023): “KILLED multiple trees, bushes” after no-shows.</td></tr>
+      <tr><td>2</td><td><b>No-shows and ghosting</b></td><td>Ultrasoft (Birdeye): “scheduled for power washing today 3/14 but did not show up, call or respond to texts.” No Pressure Pressure Washing (Yelp, 2026): fake appointments, owner unreachable, job 75% incomplete after full payment.</td></tr>
+      <tr><td>3</td><td><b>Arguing with complaining customers</b></td><td>Five Star (Yelp, 21 Apr 2026): after a bad job, staff “blamed, conflicted, and argued over and over… going so far as to yell.” Full Force (Yelp, Mar 2026): owner argued via text, then threatened an SEC/FINRA complaint against the customer. McCarthy's: customer called a liar, hung up on.</td></tr>
+      <tr><td>4</td><td><b>Quote vs final price jumps</b></td><td>Five Star (worldorgs review mirror): rough estimate $500–750 → on-site quote $1,750. Diamond Edge (HomeAdvisor, Feb 2026 — <i>note: this review appears to concern a different trade job on a shared profile; treat cautiously</i>): drive-time billed at $150/hr without transparency.</td></tr>
+      <tr><td>5</td><td><b>Missed spots / incomplete work</b></td><td>Five Star low-star reviews cite missed cleaning spots; Krystal Klean ($900 window job): tracks/sills missed, reviewer cut rating to 3★ until QC outreach fixed it.</td></tr>
+      <tr><td>6</td><td><b>Property damage from technique</b></td><td>Bullseye low-star reviews: paver sealing materials “may degrade quickly” and pressure washing “can sometimes damage window seals” (experts.reviews). Full Force (Yelp, Sep 2026): sprayed an electrical outlet, tripped a GFCI. Krystal Klean: bleach left sitting on an aluminium patio and generator box.</td></tr>
+      <tr><td>7</td><td><b>Paver sealer failing early</b></td><td>Bullseye (above); Seal Deal's whole positioning (90-day shine &amp; algae warranties) exists because this is a known pain point.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src">Sources: <a href="https://experts.reviews/company/five-star-pressure-washing-jacksonville-fl/">experts.reviews — Five Star</a> · <a href="https://experts.reviews/company/bullseye-pressure-washing-jacksonville-fl/">experts.reviews — Bullseye</a> · Yelp (Five Star, Full Force, McCarthy's) · Birdeye (Ultrasoft) · worldorgs (Krystal Klean) — all indexed 24 Nov 2026</p>
+  <div class="good"><b>Your credible wedge costs almost nothing:</b> answer fast, quote in writing, protect plants visibly, document the job with photos, and fix misses without argument. None of it requires credentials you don't have.</div>
+</section>
+
+<!-- COMPETITORS -->
+<section id="competitors">
+  <div class="sec-head">
+    <div class="num">Section 3 · Competitor landscape</div>
+    <h2>Who owns Google right now</h2>
+    <p>For “pressure washing Jacksonville FL” on google.com, verified live in a research browser on 24 Nov 2026.</p>
+  </div>
+
+  <h3 class="sub">The local pack — top 3</h3>
+  <div class="pack">
+    <div class="packrow"><div class="rank">1</div><div><b>Five Star Pressure Washing</b><div class="small">Founded 2017 · roof specialist · open 24 hrs</div></div><div class="rev"><b>5.0 ★</b><div class="small">689 reviews</div></div></div>
+    <div class="packrow"><div class="rank">2</div><div><b>Jax Pro Pressure Washing, LLC</b><div class="small">7+ yrs · open 24 hrs</div></div><div class="rev"><b>4.9 ★</b><div class="small">258 reviews</div></div></div>
+    <div class="packrow"><div class="rank">3</div><div><b>Dirty Ducks Pressure Washing and Sealing</b><div class="small">5+ yrs · paver sealing focus · open 24 hrs</div></div><div class="rev"><b>5.0 ★</b><div class="small">192 reviews</div></div></div>
+  </div>
+  <p><b>Sponsored (top of page):</b> Florida Wash Company LLC — 5.0 (51), “Opened in 2026”, open 24 hours; Massey Applications, Inc. — 5.0 (6), “Opened in 2026”. Both are 2026 start-ups buying their way to the top — proof paid visibility is accessible to new entrants, at a price.</p>
+  <p><b>Extended local list (next 17, in order):</b> Kirk's Power Pressure Washing 5.0 (424); First Coast Home Pros 4.9 (2K); Bullseye 5.0 (200); Mister Pressure Wash 4.9 (93); Express Soft And Pressure Wash 5.0 (140); Soft Wash 911 4.9 (190); As New Again 4.8 (173); Top Notch 5.0 (154); Ohana 4.9 (112); Full Force 4.8 (152); Beachside 5.0 (323); Stallone's Pro Wash 5.0 (351); Exterior Cleaning Pressure Washing 5.0 (221); Safe Touch 4.7 (136); Coastal 5.0 (73); Jacksonville Softwash 5.0 (87); Seal Deal 5.0 (198).</p>
+  <p><b>Organic page 1:</b> Krystal Klean (#1); Yelp best-10 list; Stallone's Pro Wash; Baur Power Wash; A Leg Up Pressure Washing; Thumbtack top-10; Diamond Edge; Coastal.</p>
+  <p class="small"><b>Notably absent from the top-20 local results:</b> Hydro-Kleen, Diamond Edge, JaxWash, Ultrasoft, Baur, KleanView, H2O, All Pro Soft Wash, Nassau Pressure Wash, Glass and Grass. Absence from this one query doesn't mean a weak business (the pack is proximity- and relevance-weighted) — but it does mean they don't capture the generic city query.</p>
+
+  <h3 class="sub">Threat ranking</h3>
+  <div class="tablewrap"><table class="stack-table">
+    <thead><tr><th class="num">Rank</th><th>Competitor</th><th>Threat</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>Five Star Pressure Washing</b></td><td><span class="tag high">★★★★★</span></td><td>Pack #1, 689 reviews at 5.0, roof authority, 24-hr availability. The company to beat for the generic query — not beatable in year 1.</td></tr>
+      <tr><td class="num">2</td><td><b>First Coast Home Pros</b></td><td><span class="tag high">★★★★★</span></td><td>~2,000 reviews, 17 yrs, 65 staff, $2M insurance, BBB A+, cross-sells from a 27,000-homeowner base. A different league.</td></tr>
+      <tr><td class="num">3</td><td><b>Stallone's Pro Wash</b></td><td><span class="tag high">★★★★★</span></td><td>Fastest riser (330→351 reviews in a month), perfect record, best website/content in the market, transparent pricing, 2-yr paver warranty, San Marco base covering your core neighbourhoods. The most direct threat to a new entrant's positioning.</td></tr>
+      <tr><td class="num">4</td><td><b>Krystal Klean</b></td><td><span class="tag high">★★★★</span></td><td>25 yrs, 10k customers, organic #1, franchise scale. Soft spot: 4.6 rating.</td></tr>
+      <tr><td class="num">5</td><td><b>Beachside Pressure Washing</b></td><td><span class="tag high">★★★★</span></td><td>323 reviews, commercial/HOA engine, fast scheduling, beaches corridor.</td></tr>
+      <tr><td class="num">6</td><td><b>Jax Pro Pressure Washing, LLC</b></td><td><span class="tag high">★★★★</span></td><td>Pack #2, 258 reviews, 24-hr availability.</td></tr>
+      <tr><td class="num">7</td><td><b>Kirk's Power Pressure Washing</b></td><td><span class="tag high">★★★★</span></td><td>424 reviews at 5.0 — volume speaks, even with a low content profile.</td></tr>
+      <tr><td class="num">8</td><td><b>Bullseye Pressure Washing</b></td><td><span class="tag high">★★★★</span></td><td>200 reviews, 5.0, since 2010, veteran-owned, 100% reply rate. Entrenched in Southside/Beaches.</td></tr>
+      <tr><td class="num">9</td><td><b>Dirty Ducks / Seal Deal</b></td><td><span class="tag mid">★★★</span></td><td>Pack #3 and the paver-sealing specialist respectively; own the high-ticket paver niche.</td></tr>
+      <tr><td class="num">10</td><td><b>Diamond Edge</b></td><td><span class="tag mid">★★★</span></td><td>9 yrs, high-rise/commercial niche, Atlantic Beach base; small review base for its age, weak social presence.</td></tr>
+      <tr><td class="num">11</td><td><b>Soft Wash 911 / As New Again / H2O / KleanView / Glass and Grass / Nassau / All Pro</b></td><td><span class="tag mid">★★★</span></td><td>Solid 140–360 review operators, mostly geographically niched. Hard to displace on home turf; not a threat outside it.</td></tr>
+      <tr><td class="num">12</td><td><b>Hydro-Kleen</b></td><td><span class="tag low">★★</span></td><td>106 reviews at 4.8, duplicate GBP, invisible on the generic query despite a good site and 7 years. Beatable.</td></tr>
+      <tr><td class="num">13</td><td><b>JaxWash</b></td><td><span class="tag low">★★</span></td><td>20+ yrs experience, $2M insurance — but ~95 reviews and no top-20 local presence. A sleeping incumbent; beatable on visibility and responsiveness.</td></tr>
+      <tr><td class="num">14</td><td><b>Coastal</b></td><td><span class="tag low">★★</span></td><td>9+ yrs but only 73 reviews; 5-yr paver warranty is its one standout asset. Beatable.</td></tr>
+      <tr><td class="num">15</td><td><b>Baur</b></td><td><span class="tag low">★★</span></td><td>63 reviews, 4 yrs, beaches niche, energetic social — but small. Beatable outside the beaches.</td></tr>
+      <tr><td class="num">16</td><td><b>Ultrasoft</b></td><td><span class="tag low">★</span></td><td>14 yrs and RCIA-certified, but 42 reviews at 4.6, stale website, unclaimed profiles, no warranty, no-show complaint. The most beatable “established” rival.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Threat ranking is the research team's judgement, based on the evidence in this report.</p>
+
+  <h3 class="sub">Your known competitors — audited status, late Nov 2026</h3>
+  <div class="tablewrap"><table class="stack-table">
+    <thead><tr><th>Competitor</th><th>Rating / reviews</th><th>Years</th><th>Pricing · Insurance · Guarantee</th><th>Verdict vs 7 Nov audit</th></tr></thead>
+    <tbody>
+      <tr><td><b>Stallone's Pro Wash</b></td><td>5.0 / 351 (verified live 24 Nov; was 330 on 25 Oct — gaining ~1/day)</td><td>LLC filed 9 Mar 2022 (Sunbiz) as Stallone &amp; Sons; renamed Feb 2024. Google claims “15+ years” — <b>conflicts with state records</b>; owner story says ~3 yrs part-time then full-time</td><td>Prices published: concrete $0.20/sq ft, $250 min; pavers from $0.22/sq ft. Licensed &amp; insured; 2-year written “Stallone Shield” paver warranty; $250 same-day house-wash bundle</td><td>Stronger than audit suggested; fastest riser. Best-in-class site (interactive estimate game, neighbourhood pages); 100% owner review replies; Experts Score 100 (#1 of 10 graded)</td></tr>
+      <tr><td><b>Diamond Edge Pressure Cleaning</b></td><td>4.9 / 168 (bezal.ai, crawled 22 Nov 2026)</td><td>Filed 29 Jan 2018 (Sunbiz) — ~9 yrs; owner Joshua White Jr.</td><td>No published prices. “Verified &amp; Insured” (directory); high-rise window cleaning specialist</td><td>Slightly weaker: was 5.0/~172 on 7 Nov; now 4.9/168. Mid-tier site; weak social (91 FB followers); organic page 1</td></tr>
+      <tr><td><b>JaxWash</b></td><td>5.0 / ~95 (Google AI Overview, live 24 Nov — single-sourced, approximate); Angi 5.0 (2); FB 100% recommend (12)</td><td>“Over 20 years industry experience”; “nearly 15 years serving Jacksonville”; est. 2011 (washersup); Manta says 2019 (likely wrong)</td><td>No published prices. $2M general liability; fully licensed &amp; insured; owner Brian</td><td>Confirmed: long tenure, strong insurance claim, weak visibility — not in top-20 local results. Basic site (jaxwash.com)</td></tr>
+      <tr><td><b>Bullseye Pressure Washing</b></td><td>5.0 / 200 (verified live 24 Nov; was 199 on 25 Oct)</td><td>Since 2010 (industryoversight, verified 9 Nov 2026); 7+ yrs per Google</td><td>No published prices. Family-owned, veteran-owned; owner Steven Davis; 100% owner review replies</td><td>Stable; audit figures confirmed. Good site with service-level review pages; #6 in local list</td></tr>
+      <tr><td><b>Hydro-Kleen</b></td><td>4.8 / 106 (verified live 24 Nov)</td><td>Since 2019 (own site); 7+ yrs per Google</td><td>No published prices. Licensed &amp; insured; owner Chris; team Logan/Nate</td><td>Review count now verified; mid-pack, weaker than its site suggests. Good multi-page site but <b>duplicate GBP</b> splits reviews; not in top-20; FB 320 followers</td></tr>
+      <tr><td><b>Baur Power Wash</b></td><td>5.0 / 63 (904biz, crawled ~18 Nov 2026)</td><td>LLC filed 2 Nov 2022 (Sunbiz); ~4 yrs; father-son (Jim Baur + son)</td><td>No published prices. Licensed &amp; insured; cleans ADA spots/ramps free</td><td>Small but visible; beaches niche. Basic site; active Instagram (190 followers); organic page 1; “Top 25 business in Duval County” award (BusinessRate, posted 7 Nov 2026)</td></tr>
+      <tr><td><b>Coastal Pressure Washing</b></td><td>5.0 / 73 (verified live 24 Nov; location.com agrees)</td><td>9+ years (own site); 5+ yrs per Google</td><td>No published prices. Fully insured; <b>7-day guarantee; 5-year paver sealing warranty</b></td><td>Confirmed; low review volume for its age = weak review engine. Basic site; #18 in local list; two addresses/phones in circulation — possible move or dual listing</td></tr>
+      <tr><td><b>Ultrasoft Pressure Washing</b></td><td>4.6 / 42 (Birdeye, crawled ~Jul 2026; another Birdeye page 4.7/41)</td><td>Incorporated 29 Mar 2012 (Sunbiz); ~14 yrs; CEO Adam Austin</td><td>$2M insurance (own site; bisprofiles says $1M — conflict, own site primary); RCIA-certified roof cleaning; no warranties (Angi)</td><td>Weakest of the known set digitally despite tenure and certification. Stale website (last updated ~3 yrs ago per search index); Birdeye profile unclaimed; no-show complaint on record</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub">Other competitors found in this research (not in your original audit)</h3>
+  <div class="tablewrap"><table class="stack-table">
+    <thead><tr><th>Competitor</th><th>Rating / reviews</th><th>Years</th><th>Why they matter</th></tr></thead>
+    <tbody>
+      <tr><td><b>First Coast Home Pros</b></td><td>4.9 / 1,980–2K (verified live “2K”)</td><td>Since 2009 (BBB: started 1 Jan 2009; 17 yrs)</td><td>Most-reviewed in market; 65 employees, 27,000+ homeowners served; $2M GL + workers' comp; BBB A+ accredited since 2010; FL licence CRC1331797; 100% guarantee (1 week); full home services — cross-sells pressure washing to an existing base; 2180 Emerson St, 32207</td></tr>
+      <tr><td><b>Krystal Klean</b></td><td>4.6 / 471 (Birdeye, 21 Nov 2026)</td><td>Founded 2001; 25 yrs</td><td>Organic #1 for the city query; 10,000+ customers; “largest window cleaning company in the Jacksonville area”; franchising nationally; widest service range (incl. solar panels, rust removal, high dusting, construction cleanup); 4.6 rating is below the top tier</td></tr>
+      <tr><td><b>Five Star Pressure Washing</b></td><td>5.0 / 689 (verified live)</td><td>Founded 2017, Matt Matheson</td><td>Local pack #1; jaxhumor #1 pick; roof specialist (tile/metal/slate/cedar); open 24 hrs; Yelp 4.1 (9) with a serious complaint about arguing with a customer; owner replies to only 67% of reviews</td></tr>
+      <tr><td><b>Beachside Pressure Washing</b></td><td>5.0 / 323 (verified live)</td><td>Founded 2019, Neptune Beach</td><td>Commercial/HOA strength (parking lots, storefronts, churches, post-construction); multiple rigs, fast scheduling; jaxhumor #2</td></tr>
+      <tr><td><b>Jax Pro Pressure Washing, LLC</b></td><td>4.9 / 258 (verified live)</td><td>7+ yrs</td><td>Local pack #2; open 24 hrs. Distinct from jaxpropressurewash.com (“Jacksonville Washers”), which publishes the detailed 2026 pricing guide — do not conflate</td></tr>
+      <tr><td><b>Kirk's Power Pressure Washing</b></td><td>5.0 / 424 (verified live)</td><td>5+ yrs</td><td>#4 in local list; high volume, low profile (absent from jaxhumor top 10 — possibly missed by that list)</td></tr>
+      <tr><td><b>Dirty Ducks</b></td><td>5.0 / 192 (verified live)</td><td>5+ yrs</td><td>Local pack #3; paver sealing focus; open 24 hrs</td></tr>
+      <tr><td><b>Seal Deal Pressure Washing</b></td><td>5.0 / 198 (verified live)</td><td>7+ yrs per Google; 5+ yrs per site</td><td>Paver specialist (St. Johns); $1.99–$2.99/sq ft clean/sand/seal; 90-day shine &amp; algae warranties</td></tr>
+      <tr><td><b>Soft Wash 911</b></td><td>4.9 / 190 (verified live)</td><td>Since 2013; 10+ yrs</td><td>Open 24 hrs; deck/fence/roof focus</td></tr>
+      <tr><td><b>As New Again</b></td><td>4.8 / 173 (verified live)</td><td>20+ yrs</td><td>Long tenure, mid-tier rating</td></tr>
+      <tr><td><b>H2O Pressure Washing</b></td><td>5.0 / 166 (Nov 2026)</td><td>Father-son, St. Johns</td><td>Paver-sealing certified; jaxhumor #3</td></tr>
+      <tr><td><b>KleanView Pressure Washing</b></td><td>5.0 / 168 (Nov 2026)</td><td>Office on Baymeadows Way</td><td>Southside/Baymeadows home turf; paver sealing</td></tr>
+      <tr><td><b>Glass and Grass</b></td><td>5.0 / 356 (Nov 2026)</td><td>Fernandina Beach since 2018; crew 21+ yrs in trade</td><td>Windows + pressure washing + paver sealing + solar panels; Nassau/Amelia Island</td></tr>
+      <tr><td><b>Nassau Pressure Wash</b></td><td>4.9 / 179 (Nov 2026)</td><td>Opened 2018, Yulee; veteran-owned</td><td>Yulee/Fernandina/Amelia Island</td></tr>
+      <tr><td><b>All Pro Soft Wash</b></td><td>5.0 / 142 (Nov 2026)</td><td>Veteran-owned, Northside</td><td>RV/camper cleaning niche; military/police/teacher discount</td></tr>
+      <tr><td><b>Exterior Cleaning Pressure Washing</b></td><td>5.0 / 221 (verified live)</td><td>5+ yrs</td><td>Straightforward house/roof/driveway packages</td></tr>
+      <tr><td><b>Express Soft And Pressure Wash</b></td><td>5.0 / 140 (verified live)</td><td>3+ yrs</td><td>5634 Fargo Dr N</td></tr>
+      <tr><td><b>Safe Touch Pressure Washing</b></td><td>4.7 / 136 (verified live)</td><td>20+ yrs</td><td>Publishes detailed 2026 pricing guide; open 24 hrs</td></tr>
+      <tr><td><b>Mister Pressure Wash</b></td><td>4.9 / 93 (verified live)</td><td>3+ yrs</td><td>Open 24 hrs</td></tr>
+      <tr><td><b>Jacksonville Softwash</b></td><td>5.0 / 87 (verified live)</td><td>5+ yrs</td><td>—</td></tr>
+      <tr><td><b>Top Notch Window Cleaning &amp; Pressure Washing</b></td><td>5.0 / 154 (verified live)</td><td>7+ yrs</td><td>Windows + pressure washing bundle; open 24 hrs</td></tr>
+      <tr><td><b>Full Force Pressure Washing</b></td><td>4.8 / 152 (verified live)</td><td>15+ yrs</td><td>Serious Yelp conduct complaints (threatening owner, plant damage) — reputation-damaged despite volume</td></tr>
+      <tr><td><b>Ohana Pressure Washing</b></td><td>4.9 / 112 (verified live)</td><td>10+ yrs; San Marco shop</td><td>Soft-wash specialist; awnings, pool enclosures</td></tr>
+      <tr><td><b>A Leg Up Pressure Washing</b></td><td>n/a (organic page 1)</td><td>—</td><td>Solar panel cleaning; (904) 859-0931</td></tr>
+      <tr><td><b>BB Pressure Washing</b></td><td>n/a</td><td>St. Augustine-based</td><td>Premium positioning; $2M liability; flat-rate remote quotes via photos/satellite; targets STR hosts &amp; out-of-state owners; free monthly senior house wash</td></tr>
+      <tr><td><b>Clean &amp; Pristine</b></td><td>4.9 avg, “hundreds” of reviews</td><td>—</td><td>Premium/HOA/commercial; quarterly programs; luxury homes; Ponte Vedra focus</td></tr>
+      <tr><td><b>Jax Pressure Pro</b></td><td>5.0 / 65 (own site)</td><td>Owner Jordan; St. Augustine/Silverleaf</td><td>Newer entrant gaining traction in Silverleaf community groups</td></tr>
+      <tr><td><b>Florida Wash Company LLC</b></td><td>5.0 / 51</td><td>Opened 2026</td><td>Buying top placement via Google Ads</td></tr>
+      <tr><td><b>The Handyman Company</b></td><td>4.4 avg Google (all offices)</td><td>Florida since 1999; 6 offices incl. Jax</td><td>BBB A+; 1-year workmanship warranty; FL licences CRC1336072/CBC1258366; pressure washing as one line among many</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small"><b>Advertising observed:</b> Google Ads pay-per-lead units at the top of the city query (Florida Wash Company, Massey Applications — both 2026 start-ups); no evidence of a dominant TV/radio/outdoor advertiser in this market. Most competition happens in the map pack and organic results, not paid media.</p>
+</section>
+
+<!-- GAPS -->
+<section id="gaps">
+  <div class="sec-head">
+    <div class="num">Section 4 · Gaps &amp; opportunities</div>
+    <h2>Where the market is soft</h2>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Underserved services</h3>
+      <ul>
+        <li><b>Dryer vent cleaning (exterior):</b> listed by only First Coast Home Pros, Bullseye and Jax Elite Home Services among the researched set — yet a natural add-on to a house wash and a fire-safety sell. You already list it; almost nobody leads with it.</li>
+        <li><b>Rust stain removal:</b> named as a specialty by JaxWash and Krystal Klean only; sprinkler/irrigation rust is endemic in Jacksonville (fertiliser + reclaimed water). Cheap, high-visibility add-on.</li>
+        <li><b>Solar panel cleaning:</b> offered by Glass and Grass, Krystal Klean and A Leg Up only — a growing niche as rooftop solar spreads in St. Johns County.</li>
+        <li><b>Screen enclosure / pool cage cleaning:</b> many offer it, few feature it; Bullseye reviews specifically praise screen work. Pool-cage homes are everywhere in Nocatee/Mandarin/Southside.</li>
+        <li><b>HOA violation-deadline rush jobs:</b> HOAs send cleaning notices every spring “like clockwork”; nobody brands a fast-turnaround “HOA letter” service with a stated turnaround time.</li>
+        <li><b>Post-storm / post-hurricane cleanup:</b> hurricane season creates the largest emergency search surges in the country (Signal SEO); few competitors publish storm-response content or a storm-season page.</li>
+        <li><b>Property-manager / turnover packages:</b> only DLM's directory and a few operators court this channel explicitly.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Underserved neighbourhoods</h3>
+      <ul>
+        <li><b>Westside (32210, 32221, 32244, 32254):</b> only “Jacksonville Washers” (jaxpropressurewash.com) targets it explicitly with neighbourhood pages; no top-10 operator is based there. Lower tickets, low competition.</li>
+        <li><b>Northside / Oceanway / Callahan / Yulee:</b> All Pro Soft Wash (Northside) and Nassau Pressure Wash (Yulee) are the only notable operators; large area, thin coverage.</li>
+        <li><b>Arlington:</b> Signal SEO flags commercial/HOA/subdivision work around Arlington as high-margin with almost nobody ranking for it.</li>
+        <li><b>Clay County (Orange Park, Fleming Island, Middleburg):</b> served by most operators but home base to almost none of the leaders; Safe Touch notes screen-enclosure demand in Fleming Island/Westside specifically.</li>
+      </ul>
+      <p><b>Avoid head-on fights in:</b> Jacksonville Beach/Neptune Beach (Five Star, Beachside, Baur, Diamond Edge), San Marco (Stallone's HQ, Ohana's shop, First Coast Home Pros), Nocatee/St. Johns (Seal Deal, H2O, Hydro-Kleen, Jax Pressure Pro), Southside/Baymeadows (KleanView, Bullseye).</p>
+    </div>
+    <div class="card"><h3>Content gaps on competitor sites</h3>
+      <ul>
+        <li><b>Pricing transparency is still rare at the top:</b> of the top-10 by reviews, only Stallone's publishes per-sq-ft prices; most leaders publish no prices at all. The companies that DO publish full 2026 pricing guides (Jax Pro Washers, Safe Touch, BoldWash) are smaller operators using transparency as their wedge — and they rank.</li>
+        <li><b>Seasonal/timing content:</b> only 2–3 small operators publish month-by-month Jacksonville guides; none of the top-5 by reviews does.</li>
+        <li><b>Water-restriction / storm content:</b> Hydro Wash 360 owns the water-restriction topic; almost nobody else has published on the 2026 drought order or storm response.</li>
+        <li><b>Video:</b> most competitors' social video is low-effort (Baur's reels get 30–120 likes; Diamond Edge's posts 2–8 likes; Hydro-Kleen's 1–6 likes). Nobody in Jacksonville is doing satisfying before/after video well at scale.</li>
+        <li><b>Response-time promises:</b> nobody publishes a guaranteed quote turnaround — a credible, checkable promise a new entrant can make and keep.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Review &amp; engagement weaknesses</h3>
+      <ul>
+        <li>Five Star's owner replies to only <b>67%</b> of reviews (experts.reviews) — and has a live Yelp complaint about arguing with a customer.</li>
+        <li>Ultrasoft: unclaimed Birdeye profile, stale site, 4.6 rating, no-show complaint.</li>
+        <li>Full Force: 152 Google reviews at 4.8, but Yelp documents threatening/unprofessional owner conduct.</li>
+        <li>Hydro-Kleen: duplicate GBP splitting its reviews.</li>
+        <li>Coastal (73 reviews in 9+ years) and JaxWash (~95 in ~15 years) have weak review engines — tenure alone does not build a moat.</li>
+        <li>Diamond Edge: 91 Facebook followers after 9 years; near-zero social engagement.</li>
+      </ul>
+      <p><b>Structural note:</b> the whole market's review base is thin relative to its size — the top 20 local results average ~200 reviews each, and most operators sit under 200. A new entrant that systematically collects reviews from job one can pass the bottom half of the pack within 12–18 months <i>if</i> it can get a GBP. That “if” is the crux.</p>
+    </div>
+  </div>
+
+  <h3 class="sub">Differentiation you can credibly own — no invented credentials</h3>
+  <div class="grid2">
+    <div class="card"><h3>1 · Radical price transparency</h3><p>Publish the full price ranges with “starting at” prices and a per-sq-ft table. The market leaders mostly hide prices; you can be the one that doesn't. Honest, checkable, and it directly answers the #1 “People also ask” question.</p></div>
+    <div class="card"><h3>2 · The “we show our work” protocol</h3><p>Before/after photos of every job (with permission), a written plant-protection checklist, and a post-job walkthrough — directly addressing complaint theme #1 (plant damage) and #2 (missed spots).</p></div>
+    <div class="card"><h3>3 · Response-time guarantee</h3><p>“Quote within 2 business hours, 7 days a week” — requires extending beyond Mon–Fri 9–4 (see Plan). Nobody in the market promises this in writing.</p></div>
+    <div class="card"><h3>4 · Owner-on-every-job honesty</h3><p>“One year in business, owner on every job, 7-Day Satisfaction Check” is a credible underdog story — <i>if</i> it is true and stays true. Do not inflate it.</p></div>
+    <div class="card"><h3>5 · Niche-first positioning</h3><p>Lead with the underserved add-ons (dryer vent, rust removal, screen enclosures, HOA-letter rush service) rather than the generic “we pressure wash everything” claim every competitor makes.</p></div>
+    <div class="card"><h3>What is NOT differentiation</h3><p>The 7-Day Satisfaction Check. Coastal has a 7-day guarantee, First Coast Home Pros guarantees work for 1 week, Stallone's offers a 2-year paver warranty, Seal Deal offers 90-day shine/algae warranties. Your guarantee <b>matches</b> the market; it does not beat it. Keep it — don't build the brand on it.</p></div>
+  </div>
+  <div class="alert"><b>What you must NOT claim:</b> any licence (there is no state licence to claim, but implying one exists is dishonest), insurance you do not have, an address you do not have, years of experience you do not have, or reviews you have not earned. Buying fake reviews also violates the FTC's rule on fake reviews and testimonials (effective 2024) — and competitors already get publicly accused of it (Five Star's Yelp page).</div>
+</section>
+
+<!-- PLAN -->
+<section id="plan">
+  <div class="sec-head">
+    <div class="num">Section 5 · The winning plan</div>
+    <h2>Sequenced by leverage per dollar</h2>
+    <p>The central problem, stated plainly: your binding constraints are not experience or skill — they are <b>discoverability and trust</b>. Without a GBP you cannot appear in the map pack (where the top 3 get most clicks), cannot collect Google reviews (the #1 hiring criterion), and cannot run the pay-per-lead ads two 2026 start-ups are already using. Everything below is sequenced around fixing that.</p>
+  </div>
+
+  <div class="phase">
+    <div class="when"><b>Phase 0</b><span>Weeks 1–2 · The credibility floor — before spending a dollar on marketing</span></div>
+    <div class="body"><ol>
+      <li><b>Get the Duval County Local Business Tax Receipt (LBTR).</b> Florida has no state licence for pressure washing — the LBTR is the real “licence”, issued by the Duval County Tax Collector (231 E. Forsyth St., Suite 130; 904-255-5700 opt. 3). One receipt covers consolidated Jacksonville/Duval; the beach cities (Jax Beach, Atlantic Beach, Neptune Beach) and Baldwin need separate municipal receipts if working there. Fee is modest and varies by classification (one source quotes $29.50/yr for most service businesses). This converts “not licensed” into “licensed (Duval County LBTR)” — honestly. <span class="src">Sources: bulletproofhandyman.com (rules checked 2 Nov 2026); floridallcpros.com (27 Oct 2026); 99calls.com (updated Oct 2026)</span></li>
+      <li><b>Get general-liability insurance — $1M minimum, $2M to match the leaders.</b> The single highest-leverage purchase: it unlocks HOA/property-manager/commercial work (HOAs require $1M GL with the association as additional insured), removes the biggest trust objection, and lets the site honestly say “insured”. Get quotes from NEXT, Thimble, Insureon or a local independent agent. The research deliberately quotes no premium — get real quotes.</li>
+      <li><b>Solve the GBP/address problem — treat as the #1 strategic project.</b> A Google Business Profile requires verification at a genuine business address; Google's guidelines do not accept PO boxes, UPS boxes or virtual offices. Honest options to evaluate: (a) verify at the home address of the owner or the local crew lead (service-area businesses can hide the address publicly — check current GBP guidelines before acting); (b) a small rented workspace/warehouse with a real street address (Stallone's operates from a San Marco warehouse unit); (c) if no address can be established, accept that Google-local is closed and build on the non-Google channels in Phase 1 instead — but understand this caps growth hard. <b>Do not use a fake or borrowed address:</b> GBP suspensions for address violations are common and hard to reverse.</li>
+      <li><b>Get a local 904 number</b> (call-forwarding to the existing phone). Every established competitor uses a 904 number; a toll-free 877 number signals “not local” to Jacksonville homeowners. Cheap, instant credibility.</li>
+      <li><b>Extend availability.</b> Mon–Fri 9am–4pm is the narrowest window in the market — most competitors list 6–7am starts, evening hours, Saturday, or “open 24 hours”. At minimum add Saturday and an after-hours quote route. Homeowners request quotes in the evening and at weekends.</li>
+      <li><b>Add a non-phone contact route.</b> Phone-only contact loses every customer who prefers to enquire online (most under-50s). Add an email address and a simple quote-request form (name, address, service, photos upload) — no booking engine needed. AquaClean's 24/7 AI estimator and BB Pressure Washing's photo/satellite remote quotes show where the market is heading; a plain form is the minimum viable version.</li>
+      <li><b>Publish prices.</b> Add a pricing page using the market ranges in this report, framed as “typical ranges — exact quote free”. The cheapest SEO and trust win available: it answers the top “People also ask” question and differentiates against the silent majority of leaders.</li>
+    </ol></div>
+  </div>
+
+  <div class="phase">
+    <div class="when"><b>Phase 1</b><span>Weeks 3–8 · First jobs and first proof — before the Feb–Apr peak</span></div>
+    <div class="body"><ol>
+      <li><b>Pick 2–3 launch neighbourhoods and ignore the rest for now.</b> Recommended: Westside (32210/32244 — thin competition; JaxWash is the only notable incumbent and it is weak on visibility) + one mid-tier area (e.g., Southside/Baymeadows or Mandarin) + one St. Johns community (e.g., Bartram Springs/Fruit Cove) for ticket size. Do not fight for the Beaches or San Marco in year 1.</li>
+      <li><b>Win the first 20 jobs off-Google.</b> Nextdoor (Hydro-Kleen's reviews show Nextdoor drives repeat annual customers), neighbourhood Facebook groups (Jax Pressure Pro is winning Silverleaf this way), door hangers in the launch neighbourhoods, and direct outreach to 10–15 realtors and 5–10 property managers with a one-page pre-listing/turnover offer. Price at the market's lower-middle (e.g., house wash from $249, driveway from $149 — in line with AquaClean's published floor) — competitive without racing to the bottom.</li>
+      <li><b>Turn every job into proof.</b> Before/after photos (with permission), a written plant-protection checklist left with the customer, a post-job walkthrough, and a review request the same day. Without a GBP, collect reviews on <b>Facebook and Yelp</b> plus on-site testimonials; the moment a GBP exists, redirect all review requests to Google.</li>
+      <li><b>Fix the website's conversion gaps before adding pages.</b> The site is fast (PageSpeed 100) and has schema — good bones. Add: pricing page, quote form, email contact, service-area pages for the 2–3 launch neighbourhoods, before/after gallery, and a “7-Day Satisfaction Check” page explaining exactly how it works. Do not add more generic service pages until these exist.</li>
+      <li><b>Start the content wedge.</b> Publish the two highest-value local guides the leaders have not written: (a) a Jacksonville pricing guide, (b) a seasonal guide (best time to wash in Jacksonville — Feb–Apr and Oct–Nov). These target the exact questions Google shows for this market.</li>
+    </ol></div>
+  </div>
+
+  <div class="phase">
+    <div class="when"><b>Phase 2</b><span>Months 3–6 · Build the moat — timed for the spring peak</span></div>
+    <div class="body"><ol>
+      <li><b>If GBP is solved: optimise it relentlessly</b> — all 14 services listed, photos weekly, posts, Q&amp;A, and a review-request system on every job. Target 50 Google reviews by end of month 6 (achievable: Stallone's adds ~30/month at its current pace; a new operator doing 3–5 jobs/week with a same-day ask can plausibly reach 40–60).</li>
+      <li><b>Pitch HOAs and property managers</b> (now possible with LBTR + $1M GL): HOA common areas, entry monuments, pool decks, and “HOA letter” rush service for residents. Beachside and H2O own this space today, but HOA work is relationship-driven and winnable account by account.</li>
+      <li><b>Add paver sealing as the high-ticket upsell</b> — but only with honest warranty language (do not promise 5 years like Coastal unless the sealer supplier backs it; a 90-day workmanship re-clean promise like Seal Deal's is honest and credible for a new operator).</li>
+      <li><b>Referral programme:</b> a simple, trackable offer (e.g., $25 off for referrer and referee) — word of mouth is how Hydro-Kleen and Bullseye built their bases.</li>
+      <li><b>Measure before spending on ads.</b> Only consider Google Ads once the site converts (form + phone tracking) and there are 20+ reviews somewhere. At an $11.47 median CPC and $20.02 for “roof cleaning near me”, unmeasured ad spend is the fastest way to burn cash in this market. LSA / “Google Guaranteed” is not available for pressure washing as of Nov 2026.</li>
+    </ol></div>
+  </div>
+
+  <h3 class="sub">Realistically beatable first — and how</h3>
+  <div class="tablewrap"><table class="stack-table">
+    <thead><tr><th>Target</th><th>Why beatable</th><th>How</th></tr></thead>
+    <tbody>
+      <tr><td><b>Ultrasoft</b></td><td>42 reviews, 4.6★, stale site, no warranty, no-show complaint; RCIA certification is its only moat</td><td>Out-publish and out-respond it on roof cleaning in Duval; win the “roof soft wash Jacksonville” long-tail it has abandoned</td></tr>
+      <tr><td><b>JaxWash</b></td><td>~95 reviews despite ~15 years; invisible in the local pack; basic site</td><td>Beat it on Westside/Southside visibility and responsiveness; it does not publish prices or run a review engine</td></tr>
+      <tr><td><b>Coastal</b></td><td>73 reviews in 9+ years; weak review engine</td><td>Compete on review velocity and availability; its 5-yr paver warranty is the one thing not to challenge directly</td></tr>
+      <tr><td><b>Baur</b></td><td>63 reviews; beaches-only footprint</td><td>Own the non-beach neighbourhoods it does not serve; match its social energy with better before/after content</td></tr>
+      <tr><td><b>Hydro-Kleen</b></td><td>106 reviews at 4.8, duplicate GBP, invisible on the generic query</td><td>Out-rank it on Nocatee/St. Johns long-tail content; its site is good but its local SEO is not converting</td></tr>
+      <tr><td><b>Full Force</b></td><td>152 reviews but a damaged reputation on Yelp</td><td>Do not attack directly; simply be the professional alternative in Murray Hill/Westside — its own reviews do the work</td></tr>
+    </tbody>
+  </table></div>
+  <div class="alert"><b>Not beatable in year 1:</b> Five Star, First Coast Home Pros, Stallone's, Krystal Klean, Beachside, Jax Pro LLC, Kirk's. Do not spend money trying to outrank them for “pressure washing Jacksonville FL”. Out-niche them instead.</div>
+
+  <h3 class="sub">What NOT to waste time or money on</h3>
+  <ul class="dont">
+    <li><b>Fake reviews, fake credentials, fake address.</b> Unlawful (FTC fake-review rule, effective 2024), detectable, and a GBP suspension risk. The whole plan above works without them.</li>
+    <li><b>Broad Google Ads in month 1.</b> $11.47 median CPC with no reviews, no online booking and Mon–Fri 9–4 hours will convert poorly and burn budget. Fix the funnel first.</li>
+    <li><b>Yelp advertising.</b> Yelp is a minor channel in this market — even Five Star has only 9 Yelp reviews; Bullseye and JaxWash have ~1 each. Claim the free profile; do not pay.</li>
+    <li><b>Competing on lowest price.</b> The market floor is already $0.12–$0.15/sq ft with $75–$100 minimums. Racing there destroys margin against operators with paid-off equipment.</li>
+    <li><b>Trying to rank for “pressure washing Jacksonville FL” in year 1.</b> The pack is owned by 200–2,000-review operators. Win long-tail neighbourhood and service queries first.</li>
+    <li><b>More website pages before fixing contact/pricing/hours.</b> The site's problem is not page count (17 is plenty) — it is that a visitor cannot get a price, email, or book outside weekday business hours.</li>
+    <li><b>Paver-sealing warranties you cannot back.</b> Coastal's 5-year and Stallone's 2-year warranties are backed by years of sealer experience; promising the same without it is a liability, not a selling point.</li>
+    <li><b>Expanding the service area thin.</b> Serving “Jacksonville + beaches + Ponte Vedra + St. Augustine” from day one means long drive times and no neighbourhood density. Density wins: clustered jobs, lower drive time, more neighbour referrals.</li>
+    <li><b>Franchise/lead-broker dependence.</b> Angi/HomeAdvisor/Thumbtack leads are shared with competitors and expensive; the businesses winning in Jacksonville win on Google reviews and referrals, not lead brokers.</li>
+  </ul>
+</section>
+
+<!-- UNVERIFIED -->
+<section id="unknowns">
+  <div class="sec-head">
+    <div class="num">Open questions</div>
+    <h2>What the research could not verify</h2>
+    <p>Flagged plainly, so no decision rests on a shaky number.</p>
+  </div>
+  <details><summary>Your own website's status</summary><p>flpressurewashingjacksonville.com: a fetch attempt on 24 Nov 2026 failed with a network/DNS error and was not retried. Site status, page count, schema and PageSpeed claims are taken from your own brief, not independently verified. This could be a transient failure — not evidence the site is down.</p></details>
+  <details><summary>JaxWash Google review count (~95)</summary><p>Google AI Overview (live, 24 Nov 2026) states 5.0 across 95 Google reviews, but this is single-sourced through an AI summary; Angi shows only 2 reviews and directories show “not rated”. Treat ~95 as approximate.</p></details>
+  <details><summary>Diamond Edge review count / rating (4.9 / 168)</summary><p>Comes from bezal.ai (crawled 22 Nov 2026); the 7 Nov audit said 5.0 / ~172. The small decline is plausible (one or two new sub-5★ reviews) but the figure was not verified live on Google.</p></details>
+  <details><summary>Ultrasoft review count / rating (4.6 / 42)</summary><p>Comes from Birdeye (crawled ~Jul 2026); a second Birdeye page shows 4.7 / 41. Figures may be stale; not verified live.</p></details>
+  <details><summary>Coastal's addresses / phones</summary><p>Two addresses (360 14th Ave S, Jacksonville Beach 32250; 12700 Bartram Park Blvd, Jacksonville 32258) and two phones ((904) 480-8893; (904) 347-6336) appear in different sources. Whether it moved, has two locations, or one listing is stale could not be determined.</p></details>
+  <details><summary>Stallone's “15+ years in business”</summary><p>Google's profile claims 15+ years; Florida Sunbiz shows the LLC filed 9 Mar 2022. The owner's story describes ~3 years part-time before going full-time. The 15+ figure is self-reported and conflicts with state records; the business entity is ~4 years old.</p></details>
+  <details><summary>JaxWash founding year</summary><p>Own site says “over 20 years in the industry” / “nearly 15 years serving Jacksonville”; washersup says established 2011; Manta says est. 2019. The 2011 figure is the most consistent; Manta's is likely wrong (unclaimed listing).</p></details>
+  <details><summary>Search-demand seasonality (January vs spring peak)</summary><p>jaxhumor (19 Nov 2026) says Jacksonville searches peak in January; Florida keyword data (Keyword Planner/Ahrefs) and US benchmarks point to a Mar–Aug peak with November as the trough. Both are reported in this page; the discrepancy is unresolved.</p></details>
+  <details><summary>Insurance premiums</summary><p>No current premium figures for a Jacksonville pressure-washing GL policy were sourced; the plan recommends getting quotes rather than stating a price.</p></details>
+  <details><summary>Competitor advertising spend</summary><p>No reliable data on individual competitors' ad budgets; only the visible presence of Google Ads units (Florida Wash Company, Massey Applications) was verified live.</p></details>
+  <details><summary>“Jacksonville Washers” vs “Jax Pro Pressure Washing, LLC”</summary><p>Two distinct businesses with confusingly similar names (jaxpropressurewash.com = Jacksonville Washers, 2861 College St; Jax Pro Pressure Washing LLC = local-pack #2, (904) 335-1554). Care was taken not to conflate them; their review counts and websites are separate.</p></details>
+  <details><summary>Separate workstream — your five competitors' review-by-review analysis</summary><p>This page is the web research report. The separate analysis of the five competitors' Google reviews that you are supplying yourself is not part of it: you have sent Five Star Pressure Washing's reviews so far, the other four sets are still to come, and that analysis starts when you say so — as agreed. When it is done, its findings can be folded into the competitor section here.</p></details>
+  <details><summary>First Coast Home Pros review count</summary><p>Sources range from 1,750+ (own site, older) to 1,841 (contractorlink) to 1,980 (jaxhumor, Nov 2026) to “2K” (Google, live 24 Nov 2026). The live “2K” figure is the most current; the exact count moves daily.</p></details>
+</section>
+
+<!-- SOURCES -->
+<section id="sources">
+  <div class="sec-head">
+    <div class="num">Provenance</div>
+    <h2>Sources</h2>
+    <p>Research conducted 24 November 2026. “Verified live” figures were read directly from Google search results in a live browser that day; “index” figures come from web-index search results and page fetches (crawl dates shown in the text above).</p>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Verified live (Google, 24 Nov 2026)</h3>
+      <ul>
+        <li>“pressure washing Jacksonville FL” — local pack, extended 20-business list, sponsored units, organic page 1, People also ask/search for</li>
+        <li>“Hydro-Kleen Pressure Washing Jacksonville FL reviews” — Hydro-Kleen 4.8 (106); duplicate GBP; Yelp 5.0 (6)</li>
+        <li>“JaxWash Pressure Washing Jacksonville reviews” — AI Overview 5.0 (~95); Facebook 100% recommend (12); Jax Pressure Pro 5.0 (65)</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Key index sources</h3>
+      <ul>
+        <li><a href="https://jaxhumor.com/blogs/locals-only/best-pressure-washing-jacksonville">jaxhumor.com — Best Pressure Washing Jacksonville</a> (published 19 Nov 2026, updated 20 Nov 2026)</li>
+        <li><a href="https://experts.reviews/exterior-cleaning/fl/jacksonville/?design=report&job=Power%2Fpressure%20washing">experts.reviews — Jacksonville exterior cleaning report</a> (updated 21 Nov 2026) and company reports for Stallone's, Bullseye, Five Star (Google data updated 25 Oct 2026)</li>
+        <li><a href="https://www.jaxpropressurewash.com/pressure-washing-cost-jacksonville/">Jax Pro — pressure washing cost guide</a>; <a href="https://www.safetouchwash.com/guides/pressure-washing-cost-jacksonville">Safe Touch cost guide</a>; <a href="https://sealdealpw.com/paver-sealing">Seal Deal paver sealing</a>; <a href="https://www.stallonesprowash.com/pressure-washing-jacksonville-fl/">Stallone's Pro Wash</a></li>
+        <li><a href="https://www.jaxhousewashing.com/guide-best-time-to-pressure-wash-jacksonville/">Jax House Washing seasonal guide</a> (updated Aug 2026); <a href="https://hydrowash360.com/blog/pressure-wash-water-restrictions-jacksonville/">Hydro Wash 360 — water restrictions</a> (~13 Nov 2026)</li>
+        <li><a href="https://logicalgecko.com/blog/home-services-google-ads-benchmarks">Logical Gecko — home services Google Ads benchmarks</a> (DataForSEO, pulled 14 Nov 2026); <a href="https://theseodoctors.com/pressure-washing-seo/florida/">SEO Doctors — Florida pressure washing SEO</a></li>
+        <li><a href="https://digitaltowns.app/florida/jacksonville/">Digital Towns — Jacksonville demographics</a> (Census ACS 2020–2024, verified 14 Oct 2026); <a href="https://www.ugopros.com/how-old-are-homes-in-florida-county-data-from-jacksonville-to-broward">UGO Pros — Duval housing age</a></li>
+        <li>Competitor sites &amp; records: stallonesprowash.com, bullseyepressurewashing.com, jaxwash.com, hydro-kleenpressurewashing.com, coastalpw.com, baurpowerwash.com, ultrasoftpressurewashing.com, beachsidepressurewashing.com, firstcoasthomepros.com, BBB, Sunbiz records, Birdeye, bezal.ai, 904biz, Yelp</li>
+        <li>Market &amp; segments: startpackingup.com, Elite Realty Group (20 Nov 2026), hoacensus.com, movewithmomentum.com, First Coast Association Management, dlmpropertygroup.com, nova55living.com, industryoversight.com (verified 9 Nov 2026)</li>
+        <li>Licensing: bulletproofhandyman.com (checked 2 Nov 2026), floridallcpros.com (27 Oct 2026), 99calls.com (updated Oct 2026)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Jacksonville Pressure Washing Market Research</b> — prepared for Jacksonville Pressure Wash, flpressurewashingjacksonville.com · Phone 877-367-5979 · Mon–Fri 9:00 AM – 4:00 PM ET · 7-Day Satisfaction Check.</p>
+    <p>Research date: 24 November 2026. Figures are a snapshot from that date and will drift — review counts especially. Your own stated facts (17-page site, PageSpeed 100, 1 year of experience, no licence/insurance yet, no GBP, no reviews yet) are as you provided them; see “What the research could not verify” for the items the research could not independently confirm.</p>
+  </div>
+</footer>
+
+</body>
+</html>
