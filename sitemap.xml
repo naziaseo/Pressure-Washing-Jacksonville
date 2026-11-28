@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://flpressurewashingjacksonville.com/</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=700&amp;q=55</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=700&amp;q=55</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=900&amp;q=80</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&amp;fit=crop&amp;w=700&amp;q=55</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&amp;fit=crop&amp;w=900&amp;q=55</image:loc>
-    </image:image>
-  </url>
-  <url><loc>https://flpressurewashingjacksonville.com/house-washing.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/driveway-concrete-cleaning.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/sidewalk-patio-cleaning.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/roof-soft-washing.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/fence-deck-cleaning.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/paver-cleaning-sealing.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/service-areas.html</loc></url>
-  <url><loc>https://flpressurewashingjacksonville.com/privacy-policy.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://flpressurewashingjacksonville.com/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/house-washing.html</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/driveway-concrete-cleaning.html</loc><lastmod>2026-11-26</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/sidewalk-patio-cleaning.html</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/roof-soft-washing.html</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/fence-deck-cleaning.html</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/paver-cleaning-sealing.html</loc><lastmod>2026-11-28</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/service-areas.html</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/window-cleaning.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://flpressurewashingjacksonville.com/gutter-cleaning.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/gutter-cleaning.html</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/pool-deck-cleaning.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/screen-enclosure-pool-cage-cleaning.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/dryer-vent-cleaning.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/rust-stain-removal.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://flpressurewashingjacksonville.com/commercial-exterior-cleaning.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://flpressurewashingjacksonville.com/commercial-exterior-cleaning.html</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/quote.html</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/pressure-washing-st-augustine.html</loc><lastmod>2026-11-28</lastmod></url>
   <url><loc>https://flpressurewashingjacksonville.com/pressure-washing-jacksonville-beach.html</loc><lastmod>2026-11-28</lastmod></url>
